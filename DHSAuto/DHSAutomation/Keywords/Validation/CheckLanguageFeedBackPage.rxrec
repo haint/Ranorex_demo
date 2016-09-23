@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.0"
+id="18e2173f-d773-453f-bc9a-600b3f841408"
+embeddedrepository="false"
+mode="Global">
+	<name>
+		CheckLanguageFeedBackPage
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CheckLanguageFeedBackPage"
+	namespace="DHSAutomation.Keywords.Validation"/>
+	<variables/>
+	<recorditems>
+		<mouseitem
+		enabled="True"
+		optional="False"
+		duration="400ms"
+		searchpropertyid="deebd46e-8ecb-4b16-bbb3-750ff05b12c8"
+		action="Click"
+		button="Left"
+		movetime="200ms"
+		sx="367"
+		sy="694"
+		loc="Center">
+			<comment/>
+			<bindings/>
+			<info
+			sourcename="Recorder"
+			id="d0568dc1-2e89-40a0-90f9-bd2fa44c559b">
+				<element
+				role="text"
+				prefcap="text"
+				capabilities="uiautomation"
+				flavor="uia"
+				visible="True"
+				valid="True"
+				enabled="True"
+				hasfocus="False"
+				dontcache="False"
+				index="1"
+				rect="356,684,45,15"
+				snapElem="">
+					<attribute
+					name="caption"
+					type="System.String">
+						Feedback
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Feedback
+					</attribute>
+					<attribute
+					name="automationid"
+					type="System.String">
+						feedbackTxt
+					</attribute>
+					<attribute
+					name="classname"
+					type="System.String">
+						TextBlock
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						Text
+					</attribute>
+					<attribute
+					name="frameworkid"
+					type="System.String">
+						WPF
+					</attribute>
+					<attribute
+					name="iscontentelement"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="iscontrolelement"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="isrequiredforform"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						Feedback
+					</attribute>
+					<attribute
+					name="orientation"
+					type="System.Windows.Automation.OrientationType, UIAutomationTypes, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+						None
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						4348
+					</attribute>
+				</element>
+				<path>
+					/form[@title='Dell Help &amp; Support']/?/?/text[@automationid='feedbackTxt']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="17e55c07-b784-4075-aee2-cf52c6ab9104">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCACWAJYDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
+oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACik59R+VLQAUjHapJ6A
+ZparajJ5dm373ymYgK3PX8PpTSu7Cbsrj1ndlDC2lwRkcr/jT4pfM3fIyFTghsegPb61Ss7lfIjV
+mad+QHHc+nPPQ96twB8ys6FN75AJH90Dt9KbViYu5mSpPc6xPAl1JCqqGGCcdB2z71L/AGZdf9BK
+b9f8ahcbtaul45RRyMjqlWriVrQBd8USIu7ONoPrxg/kOazjBSOyrWlTsltZdER/2Zdf9BKb9f8A
+Gj+zLr/oJTfr/jSxXskvmMkigKSCjcMvTnaQD0OetO3ru3faMr5n+t4/u/lVeyRl9an/AEkM/sy6
+/wCglN+v+NH9mXX/AEEpv1/xqRrmQbMSc57kDeM44GOePTFK8rNGT5m+UOP3PAx8350eyQfWp/0k
+VYknttYgge6kmVlLHJOOh7Z9q2KyS27XLU79+Yjk4x/e7VrVMVa6LrPm5X3X+YUUUnzeo/KqMBaK
+T5vUflR83qPyoAWik+b1H5UUALRRRQAVHPBFcIEmXcoOcZI5qSigGrkcEEVuhSFdqk5xknmpKKKA
+SsY8rz22sTzpayTKyhRgHHQd8e1JeajcvZTo2nyoGjYFjnjjr0rZrMuhcz3Fza+eY/MT90jKNjqV
+weeuQff0qVF9zd1YtK8fzEkkvI7yZbUwYknC4kU9fKB6g+1ImrXLY/4lzksgcbX3fKenQexrT8tN
+27Yuc7s474xn8uKrwqqX8qIAFWGMADsMvVMyi0ndq5W/tO6/6Bs36/4Uf2ndf9A2b9f8K06Kmz7m
+vtKf8n4sx4nnudYgne1khVVKnIOOh74962KKKaViKk+dqytYKKKKZmFFFFABRRRQBkxX15KYwHt9
+0gyB5R6biD/F6DNMXUr0ui5t/nRn/wBW3GN3+1/s/rWSJHUqVdgV+6Qen0o8xwQd7ZAIHPQH/wDW
+a39mjLnZqPqtylvG5aHe4JCiE46kdd/t6U59RvUe4BMG2H+Lym5OcAferKE8wj8sSuE/u7jj8qJJ
+pZQBLK7gdNzE0ezQczNKDVbyfKqYBJgkKY2wce+7rUkd/fPGr7rYAxl+UIAOcAZLd6yVmlWMxrI4
+Q9VDHB/Ck8x9mze230zxR7NBzM1ptQvYlkO63YIVwRGcMGBOfve1Q6heytKIWlUGKTO9ISCpHp8/
+PfrWeZHK7S7FeOM8f55NPN1cEgm4lyOnznij2aDmZr/2vLFAWmtGZgByjDa2ehGeRnHpWdHql2k8
+swEO+UjOVJwB0A5Hv+dQPPI8ZRzuy24seSTjHWo6FTXUHNmh/bd76W//AHw3/wAVR/bd76W//fDf
+/FVn0U+SIuZmh/bd76W//fDf/FUf23e+lv8A98N/8VWfRRyRDmZof23e+lv/AN8N/wDFUf23e+lv
+/wB8N/8AFVn0UckQ5maH9t3vpb/98N/8VR/bd76W/wD3w3/xVZ9FHJEOZmh/bd76W/8A3w3/AMVR
+WfRRyRDmZWooornNgooooAKKKKACiiigAoqYRIXVC7Bmx/Dxz+NQ0AFVX++31q1VV/vt9aaEJRSq
+rOwVQWYnAAGSTVj7Cyx7riVLc7iu2VW3ZAB6AH+8KYFairK2avu8u7gdlVm2gOCQASeq+gqGWGWB
+gs0bxsRnDqQcfjQAykpaKAEopaKALdFFFSMKKKKACiiigAp0a75FXONxAzTaAcHI4NAFpY3+0xNs
+baNnOOOgqvImxsewP5jNS/aBsO5AXP8AFhf8KhZizFmOSe9ACVVf77fWrVVn++31poTJ9N/5Cdr/
+ANdk/mKJP+QZB/12k/klV1ZkYMpKsDkEHBBqz9tZo9txElwdxbdKzbskAdQR/dFMBth/x8N/1xl/
+9FtRdf8AHvZ/9cT/AOjHpy3ipu8u0gRmVl3AuSAQQerehqCWaWdg00jyMBjLsScfjQAyiiigAooo
+oAt0UUVIwooooAKKKKACiiigAooooAKrP99vrRRTQDaKKKYgooooAKKKKACiiigD/9k=
+			</helperscreenshot>
+		</mouseitem>
+		<explicitdelayitem
+		enabled="True"
+		optional="False"
+		duration="5000ms">
+			<comment/>
+			<bindings/>
+		</explicitdelayitem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="CheckLanguageText"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="c073be02-7733-4393-94de-523adb1cb30b"/>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	name="DHSAutomationRepository"
+	id="b422637d-d4de-40e5-bf0f-b69169035549"
+	rxversion="6.0"
+	relativepath="..\..\DHSAutomationRepository.rxrep">
+		<codegen
+		classname="DHSAutomationRepository"
+		namespace="DHSAutomation"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="424dee14-8825-40c4-9a5b-69564e1ca82b"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CheckLanguageFeedBackPage.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

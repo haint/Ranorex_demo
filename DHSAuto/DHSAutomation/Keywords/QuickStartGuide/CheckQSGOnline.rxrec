@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.0"
+id="c047bf18-00bf-4e7c-a87c-c28066fa410b"
+embeddedrepository="false"
+mode="Global">
+	<name>
+		CheckQSGOnline
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CheckQSGOnline"
+	namespace="DHSAutomation.Keywords.QuickStartGuide"/>
+	<variables>
+		<var
+		name="varPlatformName"
+		id="a654ac36-a000-4fda-bd20-6873b03b4f21">
+			Inspiron 3558
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="ClickManualsTab"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="113f4f34-c0ca-4740-b2a0-9331495bf6f5"/>
+		</userrecorditem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="ClickQuickStartGuide"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="f3a30276-e051-4dce-914b-d7f24741777b"/>
+		</userrecorditem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="CheckPDFOpen"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="176d6723-77db-433a-b060-afd1ea06b437"/>
+		</userrecorditem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="CheckPDFLanguage"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="ef16c163-87ee-48d8-9527-3a5942e05335"/>
+		</userrecorditem>
+		<keysequenceitem
+		enabled="True"
+		optional="False"
+		duration="100ms"
+		searchpropertyid="16d358fd-9c0a-424e-85ee-38ada0aa478d"
+		KeySequence="{LControlKey down}{Wkey}{LControlKey up}"
+		presstime="100ms">
+			<comment/>
+			<bindings/>
+		</keysequenceitem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="OpenDellAgentLog"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="1e93b24c-d6ec-48f9-89bb-86eb02b07068"/>
+		</userrecorditem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="CheckQSGWebServiceURL"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="7cf8077d-321f-427c-b86b-de4e82d77b3e"/>
+		</userrecorditem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="CheckQSGDownloadURL"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="f67f9786-fd10-4961-9d5b-6f73a3bde0db"/>
+		</userrecorditem>
+		<mouseitem
+		enabled="True"
+		optional="False"
+		duration="500ms"
+		searchpropertyid="5ab61255-d8c7-4c7b-8e1c-49a0113d13bd"
+		action="Click"
+		button="Left"
+		movetime="300ms"
+		sx="1188"
+		sy="105"
+		loc="23;14">
+			<comment/>
+			<bindings/>
+			<info
+			sourcename="Recorder"
+			id="d5c99fef-f281-40a0-b0f6-dafe45a58d79">
+				<element
+				role="button"
+				prefcap="button"
+				capabilities="accessible"
+				flavor="msaa"
+				visible="True"
+				valid="True"
+				enabled="True"
+				hasfocus="False"
+				dontcache="False"
+				index="2"
+				rect="1165,91,47,30"
+				snapElem="">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Close
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Press
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Closes the window
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Close
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						PushButton
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						None
+					</attribute>
+				</element>
+				<path>
+					/form[@title~'^DellAgent\.MDLC\.00\.log\ -\ N']/?/?/button[@accessiblename='Close']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="21200c48-327d-4dc6-bd5d-081a2e02d9e9">
+				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
+aKKWrASilpKACiiigAooooAKKKKQH//Z
+			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		enabled="True"
+		optional="False"
+		duration="500ms"
+		searchpropertyid="89d97234-3ae9-467a-8d92-8d04cb464af5"
+		action="Click"
+		button="Left"
+		movetime="300ms"
+		sx="1347"
+		sy="14"
+		loc="29;14">
+			<comment/>
+			<bindings/>
+			<info
+			sourcename="Recorder"
+			id="40073cd1-71ab-43c8-8931-92b0a3e8953a">
+				<element
+				role="button"
+				prefcap="button"
+				capabilities="uiautomation, uiautomationinvoke"
+				flavor="uia"
+				visible="True"
+				valid="True"
+				enabled="True"
+				hasfocus="False"
+				dontcache="False"
+				index="3"
+				rect="1318,0,47,22"
+				snapElem="">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Close
+					</attribute>
+					<attribute
+					name="automationid"
+					type="System.String">
+						Close
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						Button
+					</attribute>
+					<attribute
+					name="iscontentelement"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						Close
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						2716
+					</attribute>
+				</element>
+				<path>
+					/form[@processname='explorer']/?/?/button[@automationid='Close']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="d3310ea2-36f1-49d3-9a1f-49d1253d49b3">
+				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
+gAooooAKKKKACiiigAooooAKKKKACiiigD//2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="ClickViewAllManuals"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="321f3db2-87f4-4f29-aa8a-19a962745b95"/>
+		</userrecorditem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="CheckDellSupportOpenIE"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="0efae03e-ba0e-41f6-8d47-d58c152f24bc"/>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	name="DHSAutomationRepository"
+	id="b422637d-d4de-40e5-bf0f-b69169035549"
+	rxversion="6.0"
+	relativepath="..\..\DHSAutomationRepository.rxrep">
+		<codegen
+		classname="DHSAutomationRepository"
+		namespace="DHSAutomation"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="424dee14-8825-40c4-9a5b-69564e1ca82b"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CheckQSGOnline.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

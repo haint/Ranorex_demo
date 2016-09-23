@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.0"
+id="118824e8-0065-4af7-a547-4b6748b8bb68"
+embeddedrepository="false"
+mode="Global">
+	<name>
+		CheckSNPPage
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CheckSNPPage"
+	namespace="DHSAutomation.Keywords.Validation"/>
+	<variables/>
+	<recorditems>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="CheckSNP"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="6cd1637c-d1c8-434d-a444-d7a1f9242880"/>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	name="DHSAutomationRepository"
+	id="b422637d-d4de-40e5-bf0f-b69169035549"
+	rxversion="6.0"
+	relativepath="..\..\DHSAutomationRepository.rxrep">
+		<codegen
+		classname="DHSAutomationRepository"
+		namespace="DHSAutomation"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="424dee14-8825-40c4-9a5b-69564e1ca82b"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CheckSNPPage.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

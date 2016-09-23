@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.0"
+id="b0d26b47-9139-48d9-ba9d-4373e09c484a"
+embeddedrepository="false"
+mode="Global">
+	<name>
+		OpenCategory
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="OpenCategory"
+	namespace="DHSAutomation.Keywords"/>
+	<variables>
+		<var
+		name="url"
+		id="b6269803-8add-4077-a81f-5c2673455f84">
+			http://www.dell.com/support/home/vn/en/vnbsdt1/product-support/servicetag/5RQTQX1
+		</var>
+	</variables>
+	<recorditems>
+		<mouseitem
+		enabled="True"
+		optional="False"
+		duration="500ms"
+		searchpropertyid="3a010196-df53-4120-aeae-5d34669a3604"
+		action="Click"
+		button="Left"
+		movetime="300ms"
+		sx="531"
+		sy="638"
+		loc="111;68">
+			<comment/>
+			<bindings/>
+			<info
+			sourcename="RepositoryEditor"
+			id="a65120af-6663-4d8f-8d4f-088c5cf1b12e">
+				<path>
+					/form[@wpfnative='True' and @name='mainWindow']//element[@automationid='FirstCategory']/button
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		enabled="True"
+		optional="False"
+		duration="500ms"
+		searchpropertyid="50a787fc-2dd5-4f4c-ae26-e6729c07f865"
+		action="Click"
+		button="Left"
+		movetime="300ms"
+		sx="316"
+		sy="489"
+		loc="CenterRight">
+			<comment/>
+			<bindings/>
+			<info
+			sourcename="RepositoryEditor"
+			id="14a864a8-31e1-4815-a912-0e88d08a1bc3">
+				<path>
+					/form[@wpfnative='True' and @name='mainWindow']//text[@automationid='GetMoreSupportTxt']
+				</path>
+			</info>
+		</mouseitem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="checkIE"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="ac7491a9-0d68-4e01-8243-06846bac0f2c"/>
+		</userrecorditem>
+		<getvaluerecorditem
+		enabled="True"
+		optional="False"
+		searchpropertyid="03eb4cc6-2ca3-4501-a917-a2dcb3f1a937"
+		attrname="Href"
+		varname="url">
+			<comment/>
+			<bindings/>
+			<info
+			sourcename="ItemRecorderEditor"
+			id="404b194a-58c5-4212-849a-d84ff46820f8">
+				<path>
+					/dom[@domain='www.dell.com']//li[#'tab-diagnose']/a[@href~'^http://www\.dell\.com/suppo']
+				</path>
+			</info>
+		</getvaluerecorditem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="CheckLanguage"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="07b143dd-32b4-4039-a1d0-30c43fedc67a"/>
+		</userrecorditem>
+		<mouseitem
+		enabled="True"
+		optional="False"
+		duration="500ms"
+		searchpropertyid="77df93f1-46e3-4ede-92a7-e81492370986"
+		action="Click"
+		button="Left"
+		movetime="300ms"
+		sx="1430"
+		sy="89"
+		loc="14;13">
+			<comment/>
+			<bindings/>
+			<info
+			sourcename="Recorder"
+			id="19095874-93ea-4b23-8c5b-b05d8fff90b5">
+				<element
+				role="button"
+				prefcap="button"
+				capabilities="accessible"
+				flavor="msaa"
+				visible="True"
+				valid="True"
+				enabled="True"
+				hasfocus="False"
+				dontcache="False"
+				index="2"
+				rect="1416,76,47,30"
+				snapElem="">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Close
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Press
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Closes the window
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Close
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						PushButton
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						None
+					</attribute>
+				</element>
+				<path>
+					/form[@processname='iexplore' and @visible='True']/?/?/button[@accessiblename='Close']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="420a6aaf-ff40-4b87-ac3e-432c8a92bd6f">
+				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
+qq2/+rH0oA//2Q==
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	name="DHSAutomationRepository"
+	id="b422637d-d4de-40e5-bf0f-b69169035549"
+	rxversion="6.0"
+	relativepath="..\DHSAutomationRepository.rxrep">
+		<codegen
+		classname="DHSAutomationRepository"
+		namespace="DHSAutomation"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="424dee14-8825-40c4-9a5b-69564e1ca82b"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		OpenCategory.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

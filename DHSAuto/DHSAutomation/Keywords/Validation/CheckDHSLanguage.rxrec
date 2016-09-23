@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.0"
+id="7081d396-5dfd-4d61-800d-8b0389f0de90"
+embeddedrepository="false"
+mode="Global">
+	<name>
+		CheckDHSLanguage
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CheckDHSLanguage"
+	namespace="DHSAutomation.Keywords.Validation"/>
+	<variables/>
+	<recorditems>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="CheckLeftMenuItems"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="53465db8-5767-4181-bbb4-2135da92d9ea"/>
+		</userrecorditem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="CheckCategoriesArticles"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="e375b328-299a-40f8-a340-df972688506f"/>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	name="DHSAutomationRepository"
+	id="b422637d-d4de-40e5-bf0f-b69169035549"
+	rxversion="6.0"
+	relativepath="..\..\DHSAutomationRepository.rxrep">
+		<codegen
+		classname="DHSAutomationRepository"
+		namespace="DHSAutomation"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="424dee14-8825-40c4-9a5b-69564e1ca82b"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CheckDHSLanguage.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

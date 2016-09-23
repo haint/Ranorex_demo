@@ -1,0 +1,408 @@
+﻿<dhs>
+	<version>2.2.26</version>
+	<translation>
+		<language code="fr-FR" name="French">
+			<repovars>
+				<var name="DHSAppName">Aide et support Dell</var>
+			</repovars>
+		</language>
+		<language code="pt-BR" name="Brazil">
+			<repovars>
+				<var name="DHSAppName">Ajuda e suporte da Dell</var>
+			</repovars>
+		</language>
+		<language code="es-ES" name="Spanish">
+			<repovars>
+				<var name="DHSAppName">Ayuda y soporte de Dell</var>
+			</repovars>
+		</language>
+		<language code="de-DE" name="Germany">
+			<repovars>
+				<var name="DHSAppName">Dell Hilfe und Support</var>
+			</repovars>
+		</language>
+		<language code="ja-JP" name="Japan">
+			<repovars>
+				<var name="DHSAppName">デルのヘルプとサポート</var>
+			</repovars>
+		</language>
+		<language code="zh-CN" name="Chinese">
+			<repovars>
+				<var name="DHSAppName">戴尔帮助和支持</var>
+			</repovars>
+		</language>
+		<language code="en-US" name="English">
+			<repovars>
+				<var name="DHSAppName">Dell Help &amp; Support</var>
+			</repovars>
+			<applicationname>Dell Help &amp; Support</applicationname>
+			<leftmenu>
+				<element name="Warranty">Warranty</element>
+				<element name="SupportAssist">SupportAssist</element>
+				<element name="Manuals">Manuals</element>
+			</leftmenu>
+			<navigationpanels>
+				<navigationpanel name="Manuals">
+					<element name="QuickStartGuide">QUICK START GUIDE</element>
+					<element name="ViewAllManuals">View all manuals for your {0} at Dell.com</element>
+				</navigationpanel>
+			</navigationpanels>
+			<helpcategories>HELP CATEGORIES</helpcategories>
+			<categories>
+				<category name="Getting Around Windows 10">
+					<title>Getting Around Windows 10</title>
+					<articles>
+						<article name="Getting started">
+							<title>Getting started</title>
+							<featuretitle>Getting started with Windows 10</featuretitle>
+							<content>
+								<header>Get Started with Windows 10</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Search everything">
+							<title>Search everything</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Search for anything, anywhere</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="What is new in Windows 10">
+							<title>What is new in Windows 10</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>What's new in Windows 10</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Get to know Microsoft Edge">
+							<title>Get to know Microsoft Edge</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Get to know Microsoft Edge</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Using Windows 10 troubleshooters">
+							<title>Using Windows 10 troubleshooters</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Use Windows Troubleshooters in Windows 10</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Using Location Settings in Win10">
+							<title>Using Location Settings in Win10</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Using Location Settings in Windows 10</header>
+								<body></body>
+							</content>
+						</article>
+					</articles>
+				</category>
+				<category name="Connecting to Wireless and Accessories">
+					<title>Connecting to Wireless and Accessories</title>
+					<articles>
+						<article name="Connecting to a Wireless Network">
+							<title>Connecting to a Wireless Network</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Connecting to a Wireless Network</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Wireless troubleshooting">
+							<title>Wireless troubleshooting</title>
+							<featuretitle>Wireless troubleshooting</featuretitle>
+							<content>
+								<header>Wireless Troubleshooting</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Windows firewall settings">
+							<title>Windows firewall settings</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Enable Windows Firewall</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Set up a wireless keyboard or mouse">
+							<title>Set up a wireless keyboard or mouse</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Set Up a Wireless Keyboard or Mouse</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Connect to a Bluetooth Device From Your Dell Computer in Windows 10">
+							<title>Connect to a Bluetooth Device From Your Dell Computer in Windows 10</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Connecting to a Bluetooth device from your Dell Computer in Windows 10</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Sharing Files">
+							<title>Sharing Files</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Share files in File Explorer</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Installing Older Windows Printer Drivers in Windows 10">
+							<title>Installing Older Windows Printer Drivers in Windows 10</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Installing Older Windows Printer Drivers in Windows 10</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Microsoft Windows 10 Compatibility with Dell Printers">
+							<title>Microsoft Windows 10 Compatibility with Dell Printers</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Microsoft Windows 10 Compatibility With Dell Printers</header>
+								<body></body>
+							</content>
+						</article>
+					</articles>
+				</category>
+				<category name="Setting Up Accounts and Personalization">
+					<title>Setting Up Accounts and Personalization</title>
+					<articles>
+						<article name="What is Cortana">
+							<title>What is Cortana</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>What is Cortana?</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Configure the Start screen and add apps and websites in Windows 10">
+							<title>Configure the Start screen and add apps and websites in Windows 10</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Configuring the Start screen, apps and websites in Windows 10</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="A new look for settings">
+							<title>A new look for settings</title>
+							<featuretitle>A new look for settings</featuretitle>
+							<content>
+								<header>A new look for settings</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="What is a Microsoft account">
+							<title>What is a Microsoft account</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>What is a Microsoft account?</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Problems with Windows password or Microsoft Account">
+							<title>Problems with Windows password or Microsoft Account</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Problems With Windows Local Account Password or Microsoft Account</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Create or modify a power plan">
+							<title>Create or modify a power plan</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Create or modify a power plan in Windows 10</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Outlook 2013 Internet Email Setup">
+							<title>Outlook 2013 Internet Email Setup</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>How to Setup an Internet Email Account in Outlook 2013</header>
+								<body></body>
+							</content>
+						</article>
+					</articles>
+				</category>
+				<category name="Getting to Know Your Device and Software">
+					<title>Getting to Know Your Device and Software</title>
+					<articles>
+						<article name="Dell Digital Delivery">
+							<title>Dell Digital Delivery</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>How do I use Dell Digital Delivery?</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Change Video Settings">
+							<title>Change Video Settings</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Changing the video settings</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Set up multiple monitors in Windows 10">
+							<title>Set up multiple monitors in Windows 10</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Setting Up Multiple Monitors in Windows 10</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Touchpad Not Working Correctly">
+							<title>Touchpad Not Working Correctly</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Touchpad not working correctly</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Configure Dell Wi-Fi Laser Printers">
+							<title>Configure Dell Wi-Fi Laser Printers</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Configure Dell Wi-Fi Laser Printers</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Installing Compatible Windows 8.1 Drivers for Win 10">
+							<title>Installing Compatible Windows 8.1 Drivers for Win 10</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Installing Compatible Windows 8.1 Drivers for Computers Upgrading to Windows 10</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Cancelling Printing in Windows 10">
+							<title>Cancelling Printing in Windows 10</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Cancelling Printing in Windows 10</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Using and Troubleshooting the Dell Integrated Webcam">
+							<title>Using and Troubleshooting the Dell Integrated Webcam</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Using and Troubleshooting the Dell Integrated Webcam</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="How to Use SupportAssist">
+							<title>How to Use SupportAssist</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Dell SupportAssist</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Battery Performance and Charging">
+							<title>Battery Performance and Charging</title>
+							<featuretitle>Battery Performance and Charging</featuretitle>
+							<content>
+								<header>Improve battery performance</header>
+								<body></body>
+							</content>
+						</article>
+					</articles>
+				</category>
+				<category name="Keeping Your System Healthy">
+					<title>Keeping Your System Healthy</title>
+					<articles>
+						<article name="Creating your recovery media">
+							<title>Creating your recovery media</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Creating Windows 10 Recovery Media</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Protecting your PC from malware">
+							<title>Protecting your PC from malware</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Protecting your Computer from Malware</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Back up and restore your files">
+							<title>Back up and restore your files</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Back up and restore your files</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Reset or reinstall Windows 10 on your Dell computer">
+							<title>Reset or reinstall Windows 10 on your Dell  computer</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Reset or Reinstall Windows 10 on Your Dell Computer</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Running Hardware Diagnostics">
+							<title>Running Hardware Diagnostics</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Running Hardware Diagnostics</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Windows 10 crashes to a blue screen">
+							<title>Windows 10 crashes to a blue screen</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Windows 10 Crashes to a Blue Screen</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Laptop does not boot">
+							<title>Laptop does not boot</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Laptop does not boot</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="McAfee LiveSafe">
+							<title>McAfee LiveSafe</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Protect ALL your devices with McAfee LiveSafe</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Increase Computer Performance">
+							<title>Increase Computer Performance</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Increasing Computer Performance</header>
+								<body></body>
+							</content>
+						</article>
+						<article name="Sound Problems in Windows 10">
+							<title>Sound Problems in Windows 10</title>
+							<featuretitle></featuretitle>
+							<content>
+								<header>Sound Problems in Microsoft Windows 10</header>
+								<body></body>
+							</content>
+						</article>
+					</articles>
+				</category>
+			</categories>
+		</language>
+	</translation>
+</dhs>

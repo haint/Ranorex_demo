@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.0"
+id="5dee1b64-40bc-4365-a284-98aabd90ee82"
+embeddedrepository="false"
+mode="Global">
+	<name>
+		RegistingDellProduct
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="RegistingDellProduct"
+	namespace="DHSAutomation.Keywords.LaunchOtherSW"/>
+	<variables/>
+	<recorditems>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="OpenRegisform"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="9928166b-6636-42d3-aa62-cf06735d5d0b"/>
+		</userrecorditem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="SetInfoRegister"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="c0bd2d1c-9ac6-46e6-92cd-a7098af5ef27"/>
+		</userrecorditem>
+		<mouseitem
+		enabled="False"
+		optional="False"
+		duration="500ms"
+		searchpropertyid="9518e36f-e961-4af8-a2bb-16cc61b3512b"
+		action="Click"
+		button="Left"
+		movetime="300ms"
+		sx="1034"
+		sy="426"
+		loc="242;6">
+			<comment/>
+			<bindings/>
+			<info
+			sourcename="Recorder"
+			id="10a8cf33-2f04-4390-912c-567d85fec6f4">
+				<element
+				role="text"
+				prefcap="text"
+				capabilities="uiautomation"
+				flavor="uia"
+				visible="True"
+				valid="True"
+				enabled="True"
+				hasfocus="False"
+				dontcache="False"
+				index="0"
+				rect="792,420,412,14"
+				snapElem="">
+					<attribute
+					name="automationid"
+					type="System.String">
+						hintText
+					</attribute>
+					<attribute
+					name="classname"
+					type="System.String">
+						TextBlock
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						Text
+					</attribute>
+					<attribute
+					name="frameworkid"
+					type="System.String">
+						WPF
+					</attribute>
+					<attribute
+					name="iscontentelement"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="iscontrolelement"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="isrequiredforform"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="orientation"
+					type="System.Windows.Automation.OrientationType, UIAutomationTypes, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+						None
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						1048
+					</attribute>
+				</element>
+				<path>
+					/form[@name='Product Registration' and @classname='Window' and @orientation='None']/element[@automationid='registerControl']/?/?/container[@automationid='svFiledsPart']/element[3]/text[@automationid='text']/text[@automationid='hintText']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="349b6a5a-3317-4870-ac24-ca4daa49a5b9">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAAwAbwDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKZnY
+zZB5ORgZ7U+q9xcRwAtNKY0DbQQM5OM+lA0m3ZE3mL6N/wB8GjzF9G/74NUv7Ts/+ftv++P/AK1H
+9p2f/P23/fH/ANalzLuX7Gp/K/uLvmL6N/3waPMX0b/vg1S/tOz/AOftv++P/rUf2nZ/8/bf98f/
+AFqOZdw9jU/lf3F3zF9G/wC+DR5i+jf98GqX9p2f/P23/fH/ANaj+07P/n7b/vj/AOtRzLuHsan8
+r+4u+Yvo3/fBo8xfRv8Avg1S/tOz/wCftv8Avj/61H9p2f8Az9t/3x/9ajmXcPY1P5X9xd8xfRv+
++DR5i+jf98GqX9p2f/P23/fH/wBaj+07P/n7b/vj/wCtRzLuHsan8r+4u+Yvo3/fBo8xfRv++DVL
++07P/n7b/vj/AOtR/adn/wA/bf8AfH/1qOZdw9jU/lf3F3zF9G/74NHmL6N/3wapf2nZ/wDP23/f
+H/1qP7Ts/wDn7b/vj/61HMu4exqfyv7i75i+jf8AfBo8xfRv++DVL+07P/n7b/vj/wCtR/adn/z9
+t/3x/wDWo5l3D2NT+V/cXfMX0b/vg0eYvo3/AHwapf2nZ/8AP23/AHx/9aj+07P/AJ+2/wC+P/rU
+cy7h7Gp/K/uLvmL6N/3waPMX0b/vg1S/tOz/AOftv++P/rUf2nZ/8/bf98f/AFqOZdw9jU/lf3Fw
+HdIGAOACORj0p9UP7Ts/+ftv++P/AK1H9p2f/P23/fH/ANajmXcPY1P5X9xfoqh/adn/AM/bf98f
+/Wo/tOz/AOftv++P/rUcy7h7Gp/K/uL9FUP7Ts/+ftv++P8A61H9p2f/AD9t/wB8f/Wo5l3D2NT+
+V/cX6Kof2nZ/8/bf98f/AFqP7Ts/+ftv++P/AK1HMu4exqfyv7i/RVD+07P/AJ+2/wC+P/rUf2nZ
+/wDP23/fH/1qOZdw9jU/lf3FudS0fAyQwbHrgg0n2hP7sn/fpv8ACqv9p2f/AD9t/wB8f/Wo/tOz
+/wCftv8Avj/61HMu4exqfyv7i19oT+7J/wB+m/wo+0J/dk/79N/hVX+07P8A5+2/74/+tR/adn/z
+9t/3x/8AWo5l3D2NT+V/cWvtCf3ZP+/Tf4UfaE/uyf8Afpv8Kq/2nZ/8/bf98f8A1qP7Ts/+ftv+
++P8A61HMu4exqfyv7i19oT+7J/36b/Cj7Qn92T/v03+FVf7Ts/8An7b/AL4/+tR/adn/AM/bf98f
+/Wo5l3D2NT+V/cWWmjdCrLIQwwR5bf4Uv2hP7sn/AH6b/Cqv9p2f/P23/fH/ANaj+07P/n7b/vj/
+AOtRzLuHsan8r+4tfaE/uyf9+m/wo+0J/dk/79N/hVX+07P/AJ+2/wC+P/rUf2nZ/wDP23/fH/1q
+OZdw9jU/lf3Fr7Qn92T/AL9N/hR9oT+7J/36b/Cqv9p2f/P23/fH/wBaj+07P/n7b/vj/wCtRzLu
+Hsan8r+4tfaE/uyf9+m/wo+0J/dk/wC/Tf4VV/tOz/5+2/74/wDrUf2nZ/8AP23/AHx/9ajmXcPY
+1P5X9xa+0J/dk/79N/hR9oT+7J/36b/Cqv8Aadn/AM/bf98f/Wo/tOz/AOftv++P/rUcy7h7Gp/K
+/uLX2hP7sn/fpv8ACj7Qn92T/v03+FVf7Ts/+ftv++P/AK1H9p2f/P23/fH/ANajmXcPY1P5X9xa
++0J/dk/79N/hR9oT+7J/36b/AAqr/adn/wA/bf8AfH/1qP7Ts/8An7b/AL4P+FHMu4exqfyv7i7E
+Ds5GMknB9zTqRSSvPXpS0zMKydc/49D/ANdh/wCg1rVk65/x6H/rsP8A0Gpn8LN8P/FiaH2O1/59
+of8AvgUfY7X/AJ9of++BU1FOyMueXch+x2v/AD7Q/wDfAo+x2v8Az7Q/98CpqKLIOeXch+x2v/Pt
+D/3wKPsdr/z7Q/8AfAqaiiyDnl3Ifsdr/wA+0P8A3wKPsdr/AM+0P/fAqaiiyDnl3Ifsdr/z7Q/9
+8Cj7Ha/8+0P/AHwKmoosg55dyH7Ha/8APtD/AN8Cj7Ha/wDPtD/3wKmoosg55dyH7Ha/8+0P/fAo
++x2v/PtD/wB8CpqKLIOeXch+x2v/AD7Q/wDfAo+x2v8Az7Q/98CpqKLIOeXch+x2v/PtD/3wKPsd
+r/z7Q/8AfAqaiiyDnl3Ifsdr/wA+0P8A3wKPsdr/AM+0P/fAqaiiyDnl3Ifsdr/z7Q/98Cj7Ha/8
++0P/AHwKmoosg55dyH7Ha/8APtD/AN8Cj7Ha/wDPtD/3wKmoosg55dyH7Ha/8+0P/fAo+x2v/PtD
+/wB8CpqKLIOeXch+x2v/AD7Q/wDfAo+x2v8Az7Q/98CpqKLIOeXch+x2v/PtD/3wKPsdr/z7Q/8A
+fAqaiiyDnl3GhEUrhFG0YGB0HpUf2O1/59of++BU2eaKdhKTWzIfsdr/AM+0P/fAo+x2v/PtD/3w
+KmopWQ+eXch+x2v/AD7Q/wDfAo+x2v8Az7Q/98CpqKLIOeXch+x2v/PtD/3wKPsdr/z7Q/8AfAqa
+iiyDnl3Ifsdr/wA+0P8A3wKPsdr/AM+0P/fAqaiiyDnl3Ifsdr/z7Q/98Cj7Ha/8+0P/AHwKmoos
+g55dyH7Ha/8APtD/AN8Cj7Ha/wDPtD/3wKmoosg55dyH7Ha/8+0P/fAo+x2v/PtD/wB8CpqKLIOe
+Xch+x2v/AD7Q/wDfAo+x2v8Az7Q/98CpqKLIOeXch+x2v/PtD/3wKPsdr/z7Q/8AfAqaiiyDnl3I
+fsdr/wA+0P8A3wKztcghis0aOKND5gGVUDsa16zPEH/Hin/XQfyNTNLlZth5SdWOppJ0/E/zpaRO
+n4n+dLVnOFVby0W6QxyB9u4NlCAc4x3q1TMb2bJPBwMHHahq44ycXdGZ/Ytv6XH/AH0tH9i2/pcf
+99LWp5a+rf8AfZo8tfVv++zU8kext9Yq/wAxl/2Lb+lx/wB9LR/Ytv6XH/fS1qeWvq3/AH2aPLX1
+b/vs0ckewfWKv8xl/wBi2/pcf99LR/Ytv6XH/fS1qeWvq3/fZo8tfVv++zRyR7B9Yq/zGX/Ytv6X
+H/fS0f2Lb+lx/wB9LWp5a+rf99mjy19W/wC+zRyR7B9Yq/zGX/Ytv6XH/fS0f2Lb+lx/30tanlr6
+t/32aPLX1b/vs0ckewfWKv8AMZf9i2/pcf8AfS0f2Lb+lx/30tanlr6t/wB9mjy19W/77NHJHsH1
+ir/MZf8AYtv6XH/fS0f2Lb+lx/30tanlr6t/32aPLX1b/vs0ckewfWKv8xl/2Lb+lx/30tH9i2/p
+cf8AfS1qeWvq3/fZo8tfVv8Avs0ckewfWKv8xl/2Lb+lx/30tH9i2/pcf99LWp5a+rf99mjy19W/
+77NHJHsH1ir/ADGX/Ytv6XH/AH0tH9i2/pcf99LWp5a+rf8AfZo8tfVv++zRyR7B9Yq/zGX/AGLb
++lx/30tH9i2/pcf99LWp5a+rf99mjy19W/77NHJHsH1ir/MZf9i2/pcf99LR/Ytv6XH/AH0tanlr
+6t/32aPLX1b/AL7NHJHsH1ir/MZf9i2/pcf99LR/Ytv6XH/fS1qeWvq3/fZo8tfVv++zRyR7B9Yq
+/wAxl/2Lb+lx/wB9LR/Ytv6XH/fS1qeWvq3/AH2aPLX1b/vs0ckewfWKv8xl/wBi2/pcf99LR/Yt
+v6XH/fS1qeWvq3/fZo8tfVv++zRyR7B9Yq/zGX/Ytv6XH/fS0f2Lb+lx/wB9LWp5a+rf99mjy19W
+/wC+zRyR7B9Yq/zGX/Ytv6XH/fS0f2Lb+lx/30tanlr6t/32aPLX1b/vs0ckewfWKv8AMZf9i2/p
+cf8AfS0f2Lb+lx/30tanlr6t/wB9mjy19W/77NHJHsH1ir/MZf8AYtv6XH/fS0f2Lb+lx/30tanl
+r6t/32aPLX1b/vs0ckewfWKv8xl/2Lb+lx/30tH9i2/pcf8AfS1qeWvq3/fZo8tfVv8Avs0ckewf
+WKv8xl/2Lb+lx/30tH9i2/pcf99LWp5a+rf99mjy19W/77NHJHsH1ir/ADGX/Ytv6XH/AH0tH9i2
+/pcf99LWp5a+rf8AfZo8tfVv++zRyR7B9Yq/zGX/AGLb+lx/30tH9i2/pcf99LWp5a+rf99mjy19
+W/77NHJHsH1ir/MZf9i2/pcf99LR/Ytv6XH/AH0tanlr6t/32aPLX1b/AL7NHJHsH1ir/MZf9i2/
+pcf99LR/Ytv6XH/fS1qeWvq3/fZo8tfVv++zRyR7B9Yq/wAxl/2Lb+lx/wB9LR/Ytv6XH/fS1qeW
+vq3/AH2aPLX1b/vo0ckewfWKv8wqgheevWlpF+7zz2paowP/2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="CloseRegisform"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="be062b8e-25cc-457d-98e4-e541c9aabcb4"/>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	name="DHSAutomationRepository"
+	id="b422637d-d4de-40e5-bf0f-b69169035549"
+	rxversion="6.0"
+	relativepath="..\..\DHSAutomationRepository.rxrep">
+		<codegen
+		classname="DHSAutomationRepository"
+		namespace="DHSAutomation"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="424dee14-8825-40c4-9a5b-69564e1ca82b"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		RegistingDellProduct.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

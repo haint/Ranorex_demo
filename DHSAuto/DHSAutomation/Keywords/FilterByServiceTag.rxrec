@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.0"
+id="6a4db250-b992-4fd8-8fc3-d7b8eef77b70"
+embeddedrepository="false"
+mode="Global">
+	<name>
+		FilterByServiceTag
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="FilterByServiceTag"
+	namespace="DHSAutomation.Keywords"/>
+	<variables>
+		<var
+		name="varServiceTag"
+		id="4cfcb9b1-1433-4f55-a424-c4d819be15f1">
+		</var>
+	</variables>
+	<recorditems/>
+	<repository
+	name="DHSAutomationRepository"
+	id="b422637d-d4de-40e5-bf0f-b69169035549"
+	rxversion="6.0"
+	relativepath="..\DHSAutomationRepository.rxrep">
+		<codegen
+		classname="DHSAutomationRepository"
+		namespace="DHSAutomation"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="424dee14-8825-40c4-9a5b-69564e1ca82b"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		FilterByServiceTag.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

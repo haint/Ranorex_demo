@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.0"
+id="f40b3b34-cd84-4ac9-9c50-9c968cfab247"
+embeddedrepository="false"
+mode="Global">
+	<name>
+		CheckTooltipServiceTagAndServiceCode
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CheckTooltipServiceTagAndServiceCode"
+	namespace="DHSAutomation.Keywords.Validation"/>
+	<variables>
+		<var
+		name="isConfirmManualSteps"
+		id="6a02f0ed-aa83-4acd-947b-cc04ed22f408">
+			True
+		</var>
+		<var
+		name="varPlatformName"
+		id="3344e7b4-958f-4c98-8377-3acd2543f442">
+			Inspiron 3558
+		</var>
+		<var
+		name="varServiceTag"
+		id="0879eb55-0660-400c-baad-1a1658e2fd61">
+		</var>
+		<var
+		name="varServiceCode"
+		id="188190d1-5bb3-4d38-b76d-05b4fd2e04e6">
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="CheckPlatformName"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="66939cb5-7035-497b-8f88-a1b6309f4606"/>
+		</userrecorditem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="CheckServiceTagInfo"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="5a61fc9f-043b-4fbf-aaad-74bfd602b0ac"/>
+		</userrecorditem>
+		<mouseitem
+		enabled="True"
+		optional="False"
+		duration="500ms"
+		searchpropertyid="5449fbc8-02c5-4ba9-8da0-c12f4026bfb9"
+		action="Move"
+		button="Left"
+		movetime="300ms"
+		sx="244"
+		sy="191"
+		loc="Center">
+			<comment/>
+			<bindings/>
+			<info
+			sourcename="Recorder"
+			id="ef6d0b2a-3085-49d0-869e-1d72154a46a8">
+				<element
+				role="picture"
+				prefcap="picture"
+				capabilities="uiautomation"
+				flavor="uia"
+				visible="True"
+				valid="True"
+				enabled="True"
+				hasfocus="False"
+				dontcache="False"
+				index="0"
+				rect="238,183,13,13"
+				snapElem="">
+					<attribute
+					name="classname"
+					type="System.String">
+						Image
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						Image
+					</attribute>
+					<attribute
+					name="frameworkid"
+					type="System.String">
+						WPF
+					</attribute>
+					<attribute
+					name="iscontentelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iscontrolelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="isrequiredforform"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						image
+					</attribute>
+					<attribute
+					name="orientation"
+					type="System.Windows.Automation.OrientationType, UIAutomationTypes, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+						None
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						6632
+					</attribute>
+				</element>
+				<path>
+					/form[@name='Dell Help &amp; Support' and @classname='Window']/button[16]/picture[@classname='Image']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="8cafdfbe-89b1-4678-b055-884c878da0d8">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABOAE4DASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKzv
+tDjyd9y/l+XuaVIwQTnvwcVIs5+2Msk0iJuAjGwbW49cf1oAu0Vm291M90ilyQzsCCoC4HTae9aV
+ABRRRQAUjfdP0paRvun6UALRRRQBWNknlCJZZVTGCAR82eueKVrRGZcvIUUgiPI28dPf9asUUAV4
+7KON1YM5VCSiE8KTViimTSpBEZJW2ovU4zQNK7sh9FUv7Wsf+e//AI43+FH9rWP/AD3/APHG/wAK
+XMu5fsan8r+4u0jfdP0psMqTxCSJtyN0OMU5vun3pkNNOzFooooEUYtQaSOZtgyH2xL/AHs9Kat7
+I3kBpIYjIhYlhxnOMDkVYFlb7mJjVgcfKwBAwMcUsFnFAUMeRsUqOnOTmgCMzTi98kmPaVJGUK5P
+oDnmqt9NJJp90jlG2bRuQEDORkfhV17QO+5pZT12jI+XPpxVXUIPs+kSoJHZQFADAcfMPQClLZml
+L+JH1RQBjn8mJYkUbQCyoNxOOadC0RgnieCMsI2KNsGQQDTTDHttmiuF+cxhlWTDDJAPTmmo9rbL
+crLKwf8AepGCrHuR1xir93l+Qr1FV1fU1tIONLi/4F/6EauAdz1qnoxB0uEggj5un+8aufd+n8qi
+OyHV/iS9WLRRRTMworPkuHOoxA+akYYrt2sA3HWo5ZJLdp9jsdyAxnzSwAyBnnoaANSmTRJPEY5V
+3I3UZxVBmAt5FPm+ajBFAnY5YjjnIpGeSGYrIzukIQf60gknvjvQCbWqIHisw6GG0lRluFRZCcqS
+JAD3Pv1FXnsN8Tr5g+ZJl6f32z+lUvtRtL9pBDIsEpLSL5ZG3GPn6fnitRrq3WHzTNGI8Z3bhihK
+2xUpSk7ydyKyRI5btI1CqJhgAYH3Fqy33T9KyFZpFe8DMscku8qJGVtmAo46c4z9KlSSQ3YYs2xp
+HUHfwQAeNvb60EmnRRRQA3Yny/Ivy/d46fSkWCJN2yJF3fewoGfrT6KAGLDEgASJFCnIAUDBpWij
+dw7RqzL0YjJFOooAayIxyyqTgjkdvSoRYWakEWkAI5BEY4qxRQAwwQllYxISv3TtHH0pDDEGaQRo
+HI5baM/nUlI33T9KAFooooA//9k=
+			</helperscreenshot>
+		</mouseitem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="ValidateServiceTagTooltip"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="3710a8e3-8f14-4055-a1fa-202604adfa21"/>
+		</userrecorditem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="CheckServiceCodeInfo"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="2b9a2162-d52b-4597-be22-d0ee0087ccad"/>
+		</userrecorditem>
+		<mouseitem
+		enabled="True"
+		optional="False"
+		duration="500ms"
+		searchpropertyid="3941a92b-1dd4-481c-8b98-0ddc42fb85bc"
+		action="Move"
+		button="Left"
+		movetime="300ms"
+		sx="278"
+		sy="211"
+		loc="Center">
+			<comment/>
+			<bindings/>
+			<info
+			sourcename="Recorder"
+			id="d7e13225-fa82-405a-869b-4f0903c6cb43">
+				<element
+				role="picture"
+				prefcap="picture"
+				capabilities="uiautomation"
+				flavor="uia"
+				visible="True"
+				valid="True"
+				enabled="True"
+				hasfocus="False"
+				dontcache="False"
+				index="0"
+				rect="272,205,13,12"
+				snapElem="">
+					<attribute
+					name="classname"
+					type="System.String">
+						Image
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						Image
+					</attribute>
+					<attribute
+					name="frameworkid"
+					type="System.String">
+						WPF
+					</attribute>
+					<attribute
+					name="iscontentelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iscontrolelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="isrequiredforform"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						image
+					</attribute>
+					<attribute
+					name="orientation"
+					type="System.Windows.Automation.OrientationType, UIAutomationTypes, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+						None
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						6632
+					</attribute>
+				</element>
+				<path>
+					/form[@name='Dell Help &amp; Support' and @classname='Window']/button[@automationid='ServiceCodeInfoButton']/picture[@classname='Image']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="142aa9b0-ac3c-4a35-8189-e3eb77418829">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABIAEgDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKwB
+I9q8UiEgsuTk5zW7G/mRI+MbgDVSjYlSuOoooqSgooooAKQdT9aWkHU/WgBaKKKAMxdNkd08902I
+MAL1IrTACgADAHAoopttiSSCiis6+vbmK9S3to43Lpu+b8fcelS3Y0hBzdkaNFYh1W+DbTFBn68f
+nmpRf38dxAk8MSrKwAI5yMjPf3pOVt0aKg3s0/ma1IOp+tKTikAIznvVGAtFFFAGc0iJfxsD+9MJ
+HllxnPGB14qODCvdC6XaWClmkAZQee2en+FatFAGIQggiT90EUv87j5HPr9f8Kiuy/2m127t32Yd
+evQ5roKzL+C7/tGO5tolk2Jj5iMZ59/eplpqbUbXabtozLDP5EoVAUQoWJbGNxIHGKsDfnT9+cec
+dv0ytPSCaQ3MU8AjLmDKxnt5hyep9/ypk1lNDtnWab9wJZQspLL8jDaOemRWk5c8bEUrUql357G9
+0bnv0paCM0g7j0qSBaKKKAE3D1H50bh6j86WigBNw9R+dV7+H7VZvErJuOCN/IOCDg+3FWaKAKWm
+Jb4klgXy2J2PFnIRgTkD8SelSaowTTLoscDymH5jFJPaM04ntpvIlPD/AC7lce44596b9illlR7u
+5MixsGVEXYuR3PJJ7UAW9w9R+dA6n60tIOp+tAC0UUUAFFFFABRRRQAUUUUAFIOp+tFFAC0UUUAf
+/9k=
+			</helperscreenshot>
+		</mouseitem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="ValidateExpressServiceCodeTooltip"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="414a1feb-b2bb-47fd-a33c-b4dad0fc72d7"/>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	name="DHSAutomationRepository"
+	id="b422637d-d4de-40e5-bf0f-b69169035549"
+	rxversion="6.0"
+	relativepath="..\..\DHSAutomationRepository.rxrep">
+		<codegen
+		classname="DHSAutomationRepository"
+		namespace="DHSAutomation"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="424dee14-8825-40c4-9a5b-69564e1ca82b"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CheckTooltipServiceTagAndServiceCode.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

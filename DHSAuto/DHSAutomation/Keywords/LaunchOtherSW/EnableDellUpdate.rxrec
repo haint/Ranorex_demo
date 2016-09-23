@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.0"
+id="d5867ece-2c69-491d-a22c-024e1ee4ee7d"
+embeddedrepository="false"
+mode="Global">
+	<name>
+		EnableDellUpdate
+	</name>
+	<description>
+		The EnableDellUpdate recording.
+	</description>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="EnableDellUpdate"
+	namespace="DHSAutomation.Keywords.LaunchOtherSW"/>
+	<variables/>
+	<recorditems>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="Enable"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="c8111815-38d5-474c-81d7-c1a0acef4f76"/>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	name="DHSAutomationRepository"
+	id="b422637d-d4de-40e5-bf0f-b69169035549"
+	rxversion="6.0"
+	relativepath="..\..\DHSAutomationRepository.rxrep">
+		<codegen
+		classname="DHSAutomationRepository"
+		namespace="DHSAutomation"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="424dee14-8825-40c4-9a5b-69564e1ca82b"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		EnableDellUpdate.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

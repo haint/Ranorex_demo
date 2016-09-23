@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.0"
+id="d37d296c-6636-416e-acd3-cb692d9a7090"
+embeddedrepository="false"
+mode="Global">
+	<name>
+		CheckSearchFailedResult
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CheckSearchFailedResult"
+	namespace="DHSAutomation.Keywords.Validation"/>
+	<variables>
+		<var
+		name="varPlatformname"
+		id="24adcdbe-8364-4620-8d3c-f20f6f4f23d1">
+			3558
+		</var>
+		<var
+		name="varServiceTag"
+		id="267139b4-0a77-4f7b-a93f-dff0d2314f5e">
+			2KM4F32
+		</var>
+		<var
+		name="varApplicationName"
+		id="8c2432e1-21dd-42b1-89ec-86c00906a8b0">
+			Learning Center
+		</var>
+		<var
+		name="varAppVersion"
+		id="72cc83ba-3da0-4fbe-ac5e-4b890517a8cc">
+			2.2.26.0
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="CheckSearchFailed"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="f63e41c7-201d-4f34-bc3f-60988a0fed83"/>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	name="DHSAutomationRepository"
+	id="b422637d-d4de-40e5-bf0f-b69169035549"
+	rxversion="6.0"
+	relativepath="..\..\DHSAutomationRepository.rxrep">
+		<codegen
+		classname="DHSAutomationRepository"
+		namespace="DHSAutomation"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="424dee14-8825-40c4-9a5b-69564e1ca82b"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CheckSearchFailedResult.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

@@ -1,0 +1,19 @@
+﻿<Properties>
+  <ActiveConfiguration value="Debug" />
+  <ActivePlatform value="x86" />
+  <SerializedValue name="ModuleBrowserState">
+    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <string>{1C1496C2-A1F7-4EF4-B02B-8E8F2C63AE6E}</string>
+      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+      <string>1fea56b5-d3d6-4f9c-8286-6647f3918fe9</string>
+      <string>b9ae3122-07d3-4996-bb44-985249552650</string>
+      <string>c22e010f-5d43-457d-983c-e64ae1f932a6</string>
+      <string>1cdbe4c9-c589-4152-9f5d-7595a30eacff</string>
+      <string>cdb79a11-40da-465f-9f0a-98745e406112</string>
+      <string>b6c7ef5a-ebf0-4dc8-80b4-082f2c90a707</string>
+      <string>034cff95-e3a0-4145-9415-01e9ca6a20e8</string>
+    </ArrayOfString>
+  </SerializedValue>
+  <ProjectBrowserState value="[Solution DHSAutomation[]]&#xD;&#xA;Solution DHSAutomation&#xD;&#xA;Solution DHSAutomation" />
+  <StartupProject value="{1C1496C2-A1F7-4EF4-B02B-8E8F2C63AE6E}" />
+</Properties>

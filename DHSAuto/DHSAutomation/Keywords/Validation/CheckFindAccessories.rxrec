@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.0"
+id="a7086387-181b-43e6-9f5c-6f59aaabdd5c"
+embeddedrepository="false"
+mode="Global">
+	<name>
+		CheckFindAccessories
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CheckFindAccessories"
+	namespace="DHSAutomation.Keywords.Validation"/>
+	<variables>
+		<var
+		name="isConfirmManualSteps"
+		id="fb620174-effa-4b4f-b4ef-31c6e13c128d">
+			True
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="CheckFindAccessoriesOnMouseHover"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="28312432-c9fc-4caa-9818-54a94833cdc1"/>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	name="DHSAutomationRepository"
+	id="b422637d-d4de-40e5-bf0f-b69169035549"
+	rxversion="6.0"
+	relativepath="..\..\DHSAutomationRepository.rxrep">
+		<codegen
+		classname="DHSAutomationRepository"
+		namespace="DHSAutomation"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="424dee14-8825-40c4-9a5b-69564e1ca82b"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CheckFindAccessories.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.0"
+id="af906c39-24ea-472c-be12-2ceabf51664a"
+embeddedrepository="false"
+mode="Global">
+	<name>
+		CheckSplashScreen
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CheckSplashScreen"
+	namespace="DHSAutomation.Keywords.Validation"/>
+	<variables>
+		<var
+		name="versionApp"
+		id="6e6c0fe6-f9e1-4909-985e-55fddbdcf71f">
+			2.2.26.0
+		</var>
+		<var
+		name="isConfirmManualSteps"
+		id="0184621d-8d8f-4181-9e26-9c07c41f015d">
+			True
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="ValidationSplashScreen"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="5fa824b1-c697-48db-bf22-6287cf6a713e"/>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	name="DHSAutomationRepository"
+	id="b422637d-d4de-40e5-bf0f-b69169035549"
+	rxversion="6.0"
+	relativepath="..\..\DHSAutomationRepository.rxrep">
+		<codegen
+		classname="DHSAutomationRepository"
+		namespace="DHSAutomation"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="424dee14-8825-40c4-9a5b-69564e1ca82b"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CheckSplashScreen.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

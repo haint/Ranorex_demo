@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.0"
+id="505e0f18-6a3f-43a9-ab24-81f19969f553"
+embeddedrepository="false"
+mode="Global">
+	<name>
+		CheckLog
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CheckLog"
+	namespace="DHSAutomation.Keywords.ContentSelfupdate"/>
+	<variables/>
+	<recorditems>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="WaitDownloadComplete"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="624aa2a9-e5c5-453d-bf44-399f64b9a418"/>
+		</userrecorditem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="CheckLogContent"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="53a85b6e-df0c-4bc8-af55-21d526487f14"/>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	name="DHSAutomationRepository"
+	id="b422637d-d4de-40e5-bf0f-b69169035549"
+	rxversion="6.0"
+	relativepath="..\..\DHSAutomationRepository.rxrep">
+		<codegen
+		classname="DHSAutomationRepository"
+		namespace="DHSAutomation"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="424dee14-8825-40c4-9a5b-69564e1ca82b"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CheckLog.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

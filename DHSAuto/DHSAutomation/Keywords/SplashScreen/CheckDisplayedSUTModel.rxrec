@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.0"
+id="f76995b3-2f45-4462-b15d-781efb739728"
+embeddedrepository="false"
+mode="Global">
+	<name>
+		CheckDisplayedSUTModel
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CheckDisplayedSUTModel"
+	namespace="DHSAutomation.Keywords.SplashScreen"/>
+	<variables>
+		<var
+		name="isConfirmManualSteps"
+		id="5200d858-29b0-4669-a8b1-9a1293606f4e">
+			True
+		</var>
+		<var
+		name="varPlatformName"
+		id="91fb154c-1e9f-4dcb-af1f-59fd8b9d3b62">
+			Inspiron 3558
+		</var>
+		<var
+		name="varServiceTag"
+		id="aff793c7-89af-4c89-b3f8-c52b8cc510a1">
+		</var>
+		<var
+		name="varServiceCode"
+		id="e04076ab-9d75-47a8-a955-2829f6d0c168">
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="CheckPlatformName"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="66939cb5-7035-497b-8f88-a1b6309f4606"/>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	name="DHSAutomationRepository"
+	id="b422637d-d4de-40e5-bf0f-b69169035549"
+	rxversion="6.0"
+	relativepath="..\..\DHSAutomationRepository.rxrep">
+		<codegen
+		classname="DHSAutomationRepository"
+		namespace="DHSAutomation"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="424dee14-8825-40c4-9a5b-69564e1ca82b"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CheckDisplayedSUTModel.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

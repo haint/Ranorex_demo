@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.0"
+id="b9d3e154-6baf-45bb-846a-755fa8bad310"
+embeddedrepository="false"
+mode="Global">
+	<name>
+		ConnectDisconnectNetwork
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ConnectDisconnectNetwork"
+	namespace="DHSAutomation.Keywords.Network"/>
+	<variables>
+		<var
+		name="varExpectedNetworkStatus"
+		id="93a075cf-b766-4568-b70b-8eff5ac4774b">
+			Connected
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="DoConnectDisconnectNetwork"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="60dc670a-ed0a-4cc7-8240-8a2279f2ea42"/>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	name="DHSAutomationRepository"
+	id="b422637d-d4de-40e5-bf0f-b69169035549"
+	rxversion="6.0"
+	relativepath="..\..\DHSAutomationRepository.rxrep">
+		<codegen
+		classname="DHSAutomationRepository"
+		namespace="DHSAutomation"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="424dee14-8825-40c4-9a5b-69564e1ca82b"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ConnectDisconnectNetwork.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

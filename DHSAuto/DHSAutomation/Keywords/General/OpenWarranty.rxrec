@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.0"
+id="b88585cb-c90c-4d42-a2bc-28323e8d057a"
+embeddedrepository="false"
+mode="Global">
+	<name>
+		OpenWarranty
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="OpenWarranty"
+	namespace="DHSAutomation.Keywords.General"/>
+	<variables/>
+	<recorditems>
+		<mouseitem
+		enabled="True"
+		optional="False"
+		duration="500ms"
+		searchpropertyid="ed214dab-a943-4b71-8093-71275aee5b16"
+		action="Click"
+		button="Left"
+		movetime="300ms"
+		sx="192"
+		sy="306"
+		loc="49;9">
+			<comment/>
+			<bindings/>
+			<info
+			sourcename="Recorder"
+			id="7e462537-d969-42d1-becc-0db0e885dff2">
+				<element
+				role="text"
+				prefcap="text"
+				capabilities="uiautomation"
+				flavor="uia"
+				visible="True"
+				valid="True"
+				enabled="True"
+				hasfocus="False"
+				dontcache="False"
+				index="1"
+				rect="143,297,55,16"
+				snapElem="">
+					<attribute
+					name="caption"
+					type="System.String">
+						Warranty
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Warranty
+					</attribute>
+					<attribute
+					name="classname"
+					type="System.String">
+						TextBlock
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						Text
+					</attribute>
+					<attribute
+					name="frameworkid"
+					type="System.String">
+						WPF
+					</attribute>
+					<attribute
+					name="iscontentelement"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="iscontrolelement"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="isrequiredforform"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						Warranty
+					</attribute>
+					<attribute
+					name="orientation"
+					type="System.Windows.Automation.OrientationType, UIAutomationTypes, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+						None
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						13744
+					</attribute>
+				</element>
+				<path>
+					/form[@title='Dell Help &amp; Support']/list[@automationid='ShortcutListbox']/?/?/text[@name='Warranty']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="5aa736ab-e866-41be-9b7d-21aa7aac301d">
+				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
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	name="DHSAutomationRepository"
+	id="b422637d-d4de-40e5-bf0f-b69169035549"
+	rxversion="6.0"
+	relativepath="..\..\DHSAutomationRepository.rxrep">
+		<codegen
+		classname="DHSAutomationRepository"
+		namespace="DHSAutomation"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="424dee14-8825-40c4-9a5b-69564e1ca82b"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		OpenWarranty.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

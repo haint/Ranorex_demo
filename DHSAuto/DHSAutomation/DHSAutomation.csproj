@@ -1,0 +1,1757 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{1C1496C2-A1F7-4EF4-B02B-8E8F2C63AE6E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DHSAutomation</RootNamespace>
+    <AssemblyName>DHSAutomation</AssemblyName>
+    <RanorexVersion>6.0</RanorexVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <projectdefaultrepository>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>Resources\ExtraDlls\itextsharp-dll-core\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>Resources\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.TaskScheduler">
+      <HintPath>Resources\Microsoft.Win32.TaskScheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Libs.Util" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions">
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\Framework64\v4.0.30319\System.Web.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>4dc4a3e8-8926-408d-852e-c3dad67eca2a</id>
+    </Compile>
+    <Compile Include="Common\DataStore.cs">
+      <id>f95d7a46-48f6-4f72-a841-032ca7c49acf</id>
+    </Compile>
+    <Compile Include="Common\DHSTranslateReader.cs">
+      <id>5720e804-ebf0-4697-8fa5-9ff272a2fa49</id>
+    </Compile>
+    <Compile Include="Common\DialogUtils.cs">
+      <id>d51bb94f-ffaa-4401-8c71-6f82d59cb389</id>
+    </Compile>
+    <Compile Include="Common\SystemTime.cs">
+      <id>9eaca847-d1a4-4364-a442-1d74937a1da8</id>
+    </Compile>
+    <Compile Include="Common\TaskScheduleUtil.cs">
+      <id>34d06fc8-9875-46d7-aeee-79751fd88764</id>
+    </Compile>
+    <Compile Include="Common\Utils.cs">
+      <id>4c0bc719-401a-4a28-9fc0-bd98cec6b93b</id>
+    </Compile>
+    <Compile Include="DHSAutomationRepository.cs">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <DependentUpon>DHSAutomationRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>05597c4d-cadd-4321-8b42-11ec6673dbb2</id>
+    </Compile>
+    <Compile Include="Keywords\ChangeLanguage.cs">
+      <DependentUpon>ChangeLanguage.rxrec</DependentUpon>
+      <id>da914c24-a28c-4769-af35-55ebe793ec95</id>
+      <BoundTo>283cfe4c-16ca-483a-a8c9-54d96d33e66a</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Keywords\ChangeLanguage.UserCode.cs">
+      <DependentUpon>ChangeLanguage.rxrec</DependentUpon>
+      <id>a78839ee-d9bb-4283-b185-eaefb1ea905f</id>
+      <BoundTo>283cfe4c-16ca-483a-a8c9-54d96d33e66a</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Keywords\CleanUp.cs">
+      <BoundTo>fb753daf-071c-49e1-a930-3258681f8810</BoundTo>
+      <DependentUpon>CleanUp.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>04bb7f67-4cb6-48df-a833-9dde6374d411</id>
+    </Compile>
+    <Compile Include="Keywords\CleanUp.UserCode.cs">
+      <BoundTo>fb753daf-071c-49e1-a930-3258681f8810</BoundTo>
+      <DependentUpon>CleanUp.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>638463fb-adec-42d9-8b94-6e14e3d1a711</id>
+    </Compile>
+    <Compile Include="Keywords\ContentSelfupdate\AddConfig.cs">
+      <id>96776f32-66c3-4ba5-81c4-5ac224b617ce</id>
+      <BoundTo>fdf150e8-5f46-40cb-8d2d-c3afad6aa93f</BoundTo>
+      <DependentUpon>AddConfig.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Keywords\ContentSelfupdate\AddConfig.UserCode.cs">
+      <id>6dda0790-2846-4c6e-b703-2ec1f052750f</id>
+      <BoundTo>fdf150e8-5f46-40cb-8d2d-c3afad6aa93f</BoundTo>
+      <DependentUpon>AddConfig.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Keywords\ContentSelfupdate\CheckDowloadContent.cs">
+      <BoundTo>3881c6a1-40c5-42cd-bfc0-fb3a6477c438</BoundTo>
+      <DependentUpon>CheckDowloadContent.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>df748d80-e5d8-495b-9bb3-d5d8d95987d9</id>
+    </Compile>
+    <Compile Include="Keywords\ContentSelfupdate\CheckDowloadContent.UserCode.cs">
+      <BoundTo>3881c6a1-40c5-42cd-bfc0-fb3a6477c438</BoundTo>
+      <DependentUpon>CheckDowloadContent.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>31165afd-6ff7-44a7-b3b2-e28125c24999</id>
+    </Compile>
+    <Compile Include="Keywords\ContentSelfupdate\CheckLog.cs">
+      <id>6b5a8c6a-02cb-4cab-9f9b-d11f94cd12f4</id>
+      <BoundTo>3fdd5828-4a6a-49ef-922e-cb2e8e11841b</BoundTo>
+      <DependentUpon>CheckLog.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Keywords\ContentSelfupdate\CheckLog.UserCode.cs">
+      <id>da3b5bea-4701-4eba-adf2-5be9812986f0</id>
+      <BoundTo>3fdd5828-4a6a-49ef-922e-cb2e8e11841b</BoundTo>
+      <DependentUpon>CheckLog.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Keywords\ContentSelfupdate\CheckUpdatedContent.cs">
+      <id>57a999a5-9c54-45b8-bc12-610d781639ec</id>
+      <BoundTo>722b8fef-d12c-4f80-95ad-89d78df59b52</BoundTo>
+      <DependentUpon>CheckUpdatedContent.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Keywords\ContentSelfupdate\CheckUpdatedContent.UserCode.cs">
+      <id>512a6632-e817-4cea-b22f-3f654dd94e3b</id>
+      <BoundTo>722b8fef-d12c-4f80-95ad-89d78df59b52</BoundTo>
+      <DependentUpon>CheckUpdatedContent.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Keywords\ContentSelfupdate\CheckUpdateLanguage.cs">
+      <BoundTo>907b196f-aa0f-4240-b83a-5c0738891365</BoundTo>
+      <DependentUpon>CheckUpdateLanguage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9f04e11a-e6fc-423f-9453-dd33d83d4ae1</id>
+    </Compile>
+    <Compile Include="Keywords\ContentSelfupdate\CheckUpdateLanguage.UserCode.cs">
+      <BoundTo>907b196f-aa0f-4240-b83a-5c0738891365</BoundTo>
+      <DependentUpon>CheckUpdateLanguage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>21fd1416-7b0e-4ee9-bf4c-e2b813ae05d3</id>
+    </Compile>
+    <Compile Include="Keywords\ContentSelfupdate\CompleteRemove.cs">
+      <id>be373cbb-682f-4d79-b463-68d702267ab5</id>
+      <BoundTo>0bec0bd8-04a4-4e5f-94e3-9b802d502ad0</BoundTo>
+      <DependentUpon>CompleteRemove.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Keywords\ContentSelfupdate\CompleteRemove.UserCode.cs">
+      <id>c1012e92-5f22-447c-b73f-48a24bfebabd</id>
+      <BoundTo>0bec0bd8-04a4-4e5f-94e3-9b802d502ad0</BoundTo>
+      <DependentUpon>CompleteRemove.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Keywords\ContentSelfupdate\ContentDownloadComplete.cs">
+      <id>0a508eb4-24b6-4398-ba30-e75b422608eb</id>
+      <BoundTo>179c05b4-13a2-4c0f-b5b3-c436dbfe2113</BoundTo>
+      <DependentUpon>ContentDownloadComplete.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Keywords\ContentSelfupdate\ContentDownloadComplete.UserCode.cs">
+      <id>4e750146-72da-4c1e-86cd-95168f614438</id>
+      <BoundTo>179c05b4-13a2-4c0f-b5b3-c436dbfe2113</BoundTo>
+      <DependentUpon>ContentDownloadComplete.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Keywords\ContentSelfupdate\RemoveLog.cs">
+      <BoundTo>56db53fc-55b3-4d32-b890-02ed3204ac3e</BoundTo>
+      <DependentUpon>RemoveLog.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>222ded13-4e97-4ddb-b47b-ac2e7472cf24</id>
+    </Compile>
+    <Compile Include="Keywords\ContentSelfupdate\RemoveLog.UserCode.cs">
+      <BoundTo>56db53fc-55b3-4d32-b890-02ed3204ac3e</BoundTo>
+      <DependentUpon>RemoveLog.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>69abe9cf-4cac-4a19-a03a-c58ee1e9e7d7</id>
+    </Compile>
+    <Compile Include="Keywords\DellSystemInfo\LoadDellSystemInfo.cs">
+      <DependentUpon>LoadDellSystemInfo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5018a650-60ff-4c6a-a81c-19e66182832e</id>
+      <BoundTo>7c69dc51-99f0-4e0f-8ddc-b528b2903a4a</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\DellSystemInfo\LoadDellSystemInfo.UserCode.cs">
+      <DependentUpon>LoadDellSystemInfo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4c0ff4eb-c4ae-4ade-b880-9ad819387847</id>
+      <BoundTo>7c69dc51-99f0-4e0f-8ddc-b528b2903a4a</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\DoSearch.cs">
+      <DependentUpon>DoSearch.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d9a17fa5-67e8-4ca7-982e-b3211139a2cc</id>
+      <BoundTo>be8db006-11d3-4fff-8e31-81314ec91032</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\DoSearch.UserCode.cs">
+      <DependentUpon>DoSearch.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3297d1ba-eb8d-4e5a-a603-2dd77c178e7b</id>
+      <BoundTo>be8db006-11d3-4fff-8e31-81314ec91032</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\FilterByServiceTag.cs">
+      <DependentUpon>FilterByServiceTag.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f138cc09-d4b1-4e55-9b16-058065e44373</id>
+      <BoundTo>d716afd8-afba-47d0-82f5-49e8acd5463b</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\FilterByServiceTag.UserCode.cs">
+      <DependentUpon>FilterByServiceTag.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>72a0892b-7716-47be-a7c2-2dc270d70496</id>
+      <BoundTo>d716afd8-afba-47d0-82f5-49e8acd5463b</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\General\CloseDHS.cs">
+      <DependentUpon>CloseDHS.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>19eb9b19-0108-4aea-b755-5182a44dc54d</id>
+      <BoundTo>2b56ae90-b610-4d24-a882-d80ea51e891b</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\General\CloseDHS.UserCode.cs">
+      <DependentUpon>CloseDHS.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>99b03a09-966a-444a-aeb6-075e9848006b</id>
+      <BoundTo>2b56ae90-b610-4d24-a882-d80ea51e891b</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\General\CloseTelemetry.cs">
+      <DependentUpon>CloseTelemetry.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0a1fb680-988f-48b0-a8ac-2cd2378d2653</id>
+      <BoundTo>956bc3db-f279-471f-b2b7-b3d171f6bd1c</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\General\CloseTelemetry.UserCode.cs">
+      <DependentUpon>CloseTelemetry.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>de81a7b2-2937-4c81-92a7-6e84bb662d4b</id>
+      <BoundTo>956bc3db-f279-471f-b2b7-b3d171f6bd1c</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\General\InstallDHS.cs">
+      <DependentUpon>InstallDHS.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7c61589e-9a59-4035-ba23-b24fc873cd03</id>
+      <BoundTo>71e7f616-f875-4203-9045-ab7b40e6b576</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\General\InstallDHS.UserCode.cs">
+      <DependentUpon>InstallDHS.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ba19aacf-1c64-4962-ba8e-4a09fd7f2d9b</id>
+      <BoundTo>71e7f616-f875-4203-9045-ab7b40e6b576</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\General\OpenDHS.cs">
+      <DependentUpon>OpenDHS.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4aad6480-7fa1-464f-ba65-6ad2fbfdba76</id>
+      <BoundTo>26692cb7-d12e-4d8b-a21d-2a60e4fdbe6b</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\General\OpenDHS.UserCode.cs">
+      <DependentUpon>OpenDHS.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4e63e958-8f9b-4ce2-a0b0-66908807ae4f</id>
+      <BoundTo>26692cb7-d12e-4d8b-a21d-2a60e4fdbe6b</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\General\OpenTelemetry.cs">
+      <DependentUpon>OpenTelemetry.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3c34e62f-9cae-47a3-bd6e-edf800d68c5d</id>
+      <BoundTo>a07b93ee-b9d2-4f9f-9855-248ea67b5467</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\General\OpenTelemetry.UserCode.cs">
+      <DependentUpon>OpenTelemetry.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0ae3cb46-956a-4bd5-a1a4-5a1a949257ba</id>
+      <BoundTo>a07b93ee-b9d2-4f9f-9855-248ea67b5467</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\General\OpenWarranty.cs">
+      <BoundTo>d8590c3a-f156-4e54-acc2-4ad6a85277bb</BoundTo>
+      <DependentUpon>OpenWarranty.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e9f04547-ff4c-48cf-bd55-e8c707dd2f3e</id>
+    </Compile>
+    <Compile Include="Keywords\General\OpenWarranty.UserCode.cs">
+      <BoundTo>d8590c3a-f156-4e54-acc2-4ad6a85277bb</BoundTo>
+      <DependentUpon>OpenWarranty.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0ccd0feb-dd9b-4ba2-998b-073dc47773ba</id>
+    </Compile>
+    <Compile Include="Keywords\General\SetRepoVariables.cs">
+      <id>62b7aa3a-74dc-484c-8fc9-81cd5da11f88</id>
+    </Compile>
+    <Compile Include="Keywords\General\UninstallDHS.cs">
+      <DependentUpon>UninstallDHS.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>072177ca-51af-439e-b5a7-a09be04a5239</id>
+      <BoundTo>6efcbce2-b750-45db-b17a-189766430502</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\General\UninstallDHS.UserCode.cs">
+      <DependentUpon>UninstallDHS.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>034f7273-a790-4cdc-a667-ce1666fb44d8</id>
+      <BoundTo>6efcbce2-b750-45db-b17a-189766430502</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\ChangeDateExpire.cs">
+      <DependentUpon>ChangeDateExpire.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>70bcc795-5e6b-4c7d-9090-e03a7bb666a8</id>
+      <BoundTo>68b79a0e-b411-4ee0-8aa7-d4680afb75e7</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\ChangeDateExpire.UserCode.cs">
+      <DependentUpon>ChangeDateExpire.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2a971712-9d66-4b0b-83c0-9581c3f4d90b</id>
+      <BoundTo>68b79a0e-b411-4ee0-8aa7-d4680afb75e7</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\ChangeDateLess30.cs">
+      <DependentUpon>ChangeDateLess30.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>45e7a3d2-f6d8-4f3a-9f1e-8510c7929107</id>
+      <BoundTo>614d9bdc-4710-4f23-8859-4c5a84c24d0f</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\ChangeDateLess30.UserCode.cs">
+      <DependentUpon>ChangeDateLess30.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>27c33e8d-e0fb-49a4-b993-de84a5286762</id>
+      <BoundTo>614d9bdc-4710-4f23-8859-4c5a84c24d0f</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\ChangeDateMore30.cs">
+      <BoundTo>8b50cc42-2ef3-497e-9265-0cde996ee72d</BoundTo>
+      <DependentUpon>ChangeDateMore30.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dbeabf8d-9f91-4e47-a34a-e8ffdd949a49</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\ChangeDateMore30.UserCode.cs">
+      <BoundTo>8b50cc42-2ef3-497e-9265-0cde996ee72d</BoundTo>
+      <DependentUpon>ChangeDateMore30.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d6212b49-53fa-45d6-a2db-aff688578484</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\CheckMDLCSConfig.cs">
+      <BoundTo>f7b5bc2c-9453-4e1b-9d0d-64cda14b590b</BoundTo>
+      <DependentUpon>CheckMDLCSConfig.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0fdcdf35-e37b-4b43-acdf-5ae518ce27b3</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\CheckMDLCSConfig.UserCode.cs">
+      <BoundTo>f7b5bc2c-9453-4e1b-9d0d-64cda14b590b</BoundTo>
+      <DependentUpon>CheckMDLCSConfig.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f4221bfe-f2a2-4fff-bae0-a18b0fe44001</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\CheckWarrantAfterChangeTime.cs">
+      <BoundTo>e3999548-ea48-4873-8e33-0f3784ed359a</BoundTo>
+      <DependentUpon>CheckWarrantAfterChangeTime.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9397e13c-507f-4070-884c-4ed505cafff1</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\CheckWarrantAfterChangeTime.UserCode.cs">
+      <BoundTo>e3999548-ea48-4873-8e33-0f3784ed359a</BoundTo>
+      <DependentUpon>CheckWarrantAfterChangeTime.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>afc8f69b-6287-41bb-a3fe-8619058443a2</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\CheckWarrantyNoRegistedText.cs">
+      <DependentUpon>CheckWarrantyNoRegistedText.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a5406eab-cdcc-4f5e-9b2a-4a82a79736ad</id>
+      <BoundTo>c598f0d7-a214-4cc2-8d33-5f5888d3a719</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\CheckWarrantyNoRegistedText.UserCode.cs">
+      <DependentUpon>CheckWarrantyNoRegistedText.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3feb455f-561b-488c-9b35-c1530bf7d87c</id>
+      <BoundTo>c598f0d7-a214-4cc2-8d33-5f5888d3a719</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\DellUpdateDirverStatus.cs">
+      <BoundTo>ca34f4ed-c019-498b-ad64-8a8fd374fefa</BoundTo>
+      <DependentUpon>DellUpdateDirverStatus.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b2bd1c9a-1e08-40df-9db8-a78d191bb54d</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\DellUpdateDirverStatus.UserCode.cs">
+      <BoundTo>ca34f4ed-c019-498b-ad64-8a8fd374fefa</BoundTo>
+      <DependentUpon>DellUpdateDirverStatus.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6cb3b08d-53e4-4777-88aa-3daa83860c7d</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\DellUpdateInstall.cs">
+      <BoundTo>7ae978d9-fb2a-437d-b1b9-19b9acdf5450</BoundTo>
+      <DependentUpon>DellUpdateInstall.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b453765f-44d2-443f-8172-e59e42fa9397</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\DellUpdateInstall.UserCode.cs">
+      <BoundTo>7ae978d9-fb2a-437d-b1b9-19b9acdf5450</BoundTo>
+      <DependentUpon>DellUpdateInstall.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4d81fa06-bd1e-4443-a8d3-887d48b21f74</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\DellUpdateUninstall.cs">
+      <BoundTo>9d51640d-1ede-4d43-a505-bfbaf19603de</BoundTo>
+      <DependentUpon>DellUpdateUninstall.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bc52377e-d030-44d6-a5d7-007e9a97db13</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\DellUpdateUninstall.UserCode.cs">
+      <BoundTo>9d51640d-1ede-4d43-a505-bfbaf19603de</BoundTo>
+      <DependentUpon>DellUpdateUninstall.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3ddca2d0-d80b-4cdc-b383-fe77d079b19d</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\DisableDellUpdate.cs">
+      <BoundTo>dab803b2-16df-4ca0-be06-0a7e7ea9c05c</BoundTo>
+      <DependentUpon>DisableDellUpdate.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>39293139-97db-41ed-bbeb-9049d5000dec</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\DisableDellUpdate.UserCode.cs">
+      <BoundTo>dab803b2-16df-4ca0-be06-0a7e7ea9c05c</BoundTo>
+      <DependentUpon>DisableDellUpdate.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9fdad1b2-c12a-4777-91c3-1fab57088aea</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\EnableDellUpdate.cs">
+      <BoundTo>fd8ad281-1c6e-40ae-8afd-eb32bfe001fa</BoundTo>
+      <DependentUpon>EnableDellUpdate.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>80b6c020-a71f-482e-a455-cb3c262d9356</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\EnableDellUpdate.UserCode.cs">
+      <BoundTo>fd8ad281-1c6e-40ae-8afd-eb32bfe001fa</BoundTo>
+      <DependentUpon>EnableDellUpdate.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e9be3e91-2528-43c5-8198-41b9d1e778f8</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\FeedbackCheck.cs">
+      <BoundTo>e2d1df8e-6efe-4d77-8375-5bde9deac1f8</BoundTo>
+      <DependentUpon>FeedbackCheck.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1e874d7e-7e30-4adf-9a76-9e69dce48193</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\FeedbackCheck.UserCode.cs">
+      <BoundTo>e2d1df8e-6efe-4d77-8375-5bde9deac1f8</BoundTo>
+      <DependentUpon>FeedbackCheck.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>81676c12-df3b-43d6-9a5c-002ffbf434d7</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\GetWarrant.cs">
+      <BoundTo>e8e5f555-e028-410e-b5e8-481fcb292a6e</BoundTo>
+      <DependentUpon>GetWarrant.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>34f214de-5b4d-4219-adb9-8c88e0d92573</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\GetWarrant.UserCode.cs">
+      <BoundTo>e8e5f555-e028-410e-b5e8-481fcb292a6e</BoundTo>
+      <DependentUpon>GetWarrant.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3048b761-443f-4098-83d8-d50668c45084</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\Manual.cs">
+      <BoundTo>9bb6a288-1dcb-47d0-8f84-2d25e962c4db</BoundTo>
+      <DependentUpon>Manual.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>308a3710-1829-47cf-9335-2c3a9aeacc1f</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\Manual.UserCode.cs">
+      <BoundTo>9bb6a288-1dcb-47d0-8f84-2d25e962c4db</BoundTo>
+      <DependentUpon>Manual.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0c1382d0-be09-4320-b6a5-17083fac720e</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\RegistingDellProduct.cs">
+      <BoundTo>ea7a6600-1d06-4878-93d2-4ac70a9d149d</BoundTo>
+      <DependentUpon>RegistingDellProduct.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>06c62d02-6317-4ecc-9ec3-5cab80cdcce2</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\RegistingDellProduct.UserCode.cs">
+      <BoundTo>ea7a6600-1d06-4878-93d2-4ac70a9d149d</BoundTo>
+      <DependentUpon>RegistingDellProduct.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>442a6c88-d44c-4fc1-a2c4-8cc25033f3ca</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\RemoveKickstart.cs">
+      <BoundTo>ad4c5abf-0662-4e84-b5a6-590a1a526aac</BoundTo>
+      <DependentUpon>RemoveKickstart.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>93196bf6-1404-4b53-8dd8-8858a69b5a55</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\RemoveKickstart.UserCode.cs">
+      <BoundTo>ad4c5abf-0662-4e84-b5a6-590a1a526aac</BoundTo>
+      <DependentUpon>RemoveKickstart.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1845b685-2e0c-41a5-8af8-c64da0fc0570</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\RestoreKickstart.cs">
+      <BoundTo>9404d657-9bb4-40d5-aca9-b80659319e97</BoundTo>
+      <DependentUpon>RestoreKickstart.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a5cdf666-3b2e-4e38-98b7-23724e0aba83</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\RestoreKickstart.UserCode.cs">
+      <BoundTo>9404d657-9bb4-40d5-aca9-b80659319e97</BoundTo>
+      <DependentUpon>RestoreKickstart.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2ee9f10f-79a2-4e0a-8c1e-6ef628a1e3c2</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\RestoreSupportAssit.cs">
+      <BoundTo>16184b78-d1c8-441a-bfc3-c8515c7d83f2</BoundTo>
+      <DependentUpon>RestoreSupportAssit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6bf0aaf0-3b13-4f9f-ab50-da8aab387580</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\RestoreSupportAssit.UserCode.cs">
+      <BoundTo>16184b78-d1c8-441a-bfc3-c8515c7d83f2</BoundTo>
+      <DependentUpon>RestoreSupportAssit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7adf71e4-2ffd-419d-8412-2e8b39c91f43</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\RestoreTime.cs">
+      <BoundTo>3823757c-9a31-4f4d-b8ca-1be7e9aee2d3</BoundTo>
+      <DependentUpon>RestoreTime.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a17d89be-6a45-4a46-9afa-efbcc3abb61f</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\RestoreTime.UserCode.cs">
+      <BoundTo>3823757c-9a31-4f4d-b8ca-1be7e9aee2d3</BoundTo>
+      <DependentUpon>RestoreTime.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f35abf7c-2a6a-46af-9b01-3badeba60ad2</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\SupportAssitInstalled.cs">
+      <BoundTo>2cf55ac3-2e79-46aa-ab2d-941d110b30ae</BoundTo>
+      <DependentUpon>SupportAssitInstalled.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ccf98467-5e69-42dd-b5ea-39dae6b8391d</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\SupportAssitInstalled.UserCode.cs">
+      <BoundTo>2cf55ac3-2e79-46aa-ab2d-941d110b30ae</BoundTo>
+      <DependentUpon>SupportAssitInstalled.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e34792bf-030a-4f25-841f-4584d60dc64e</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\RemoveSupportAssit.cs">
+      <BoundTo>121ffee6-8918-467c-91c5-cc69e50871d8</BoundTo>
+      <DependentUpon>RemoveSupportAssit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0d18b81a-246d-4b58-b428-9bbffe27107c</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\RemoveSupportAssit.UserCode.cs">
+      <BoundTo>121ffee6-8918-467c-91c5-cc69e50871d8</BoundTo>
+      <DependentUpon>RemoveSupportAssit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>72bb9d63-48bf-4258-a83e-a6d61983b2b1</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\SupportAssitNotInstalled.cs">
+      <BoundTo>607b41a9-dd12-4255-914b-76c40b27bd12</BoundTo>
+      <DependentUpon>SupportAssitNotInstalled.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>74b7a1cd-6646-4070-8362-535954f2fe95</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\SupportAssitNotInstalled.UserCode.cs">
+      <BoundTo>607b41a9-dd12-4255-914b-76c40b27bd12</BoundTo>
+      <DependentUpon>SupportAssitNotInstalled.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fc1120c1-deee-4380-85fa-08d14d70ebbd</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\WarrantyNoRegisWithKickstart.cs">
+      <BoundTo>34b7b234-36e5-4a8d-af16-afdd27bd4fdd</BoundTo>
+      <DependentUpon>WarrantyNoRegisWithKickstart.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8560a17a-b306-4c6a-adca-506ce2fe4680</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\WarrantyNoRegisWithKickstart.UserCode.cs">
+      <BoundTo>34b7b234-36e5-4a8d-af16-afdd27bd4fdd</BoundTo>
+      <DependentUpon>WarrantyNoRegisWithKickstart.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>13601452-14c0-4148-91e5-ac9887d5fde6</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\WarrantyNoRegisWithoutKickstart.cs">
+      <BoundTo>788795d4-0e82-4e32-95a1-41ca8f0e3bdb</BoundTo>
+      <DependentUpon>WarrantyNoRegisWithoutKickstart.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ec8e2d22-3a45-4c27-a023-66b84ea37614</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\WarrantyNoRegisWithoutKickstart.UserCode.cs">
+      <BoundTo>788795d4-0e82-4e32-95a1-41ca8f0e3bdb</BoundTo>
+      <DependentUpon>WarrantyNoRegisWithoutKickstart.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>de295c61-26b0-405b-8933-8d66f949266d</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\WarrantyRegis.cs">
+      <BoundTo>6b62f9bc-e364-4ef0-a6fc-996cd632a2ac</BoundTo>
+      <DependentUpon>WarrantyRegis.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c4bc840c-5c18-4bbd-ae1b-1e02ed567741</id>
+    </Compile>
+    <Compile Include="Keywords\LaunchOtherSW\WarrantyRegis.UserCode.cs">
+      <BoundTo>6b62f9bc-e364-4ef0-a6fc-996cd632a2ac</BoundTo>
+      <DependentUpon>WarrantyRegis.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5d7b4401-96c7-4754-805f-7434b9e48f73</id>
+    </Compile>
+    <Compile Include="Keywords\Network\CloseNetworkConnectionPanel.cs">
+      <BoundTo>e60cefbd-09ea-40a0-8ef2-e955592d8ae8</BoundTo>
+      <DependentUpon>CloseNetworkConnectionPanel.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ab475eba-a09a-4ec7-85c3-55434c1efe04</id>
+    </Compile>
+    <Compile Include="Keywords\Network\CloseNetworkConnectionPanel.UserCode.cs">
+      <BoundTo>e60cefbd-09ea-40a0-8ef2-e955592d8ae8</BoundTo>
+      <DependentUpon>CloseNetworkConnectionPanel.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ecd10b23-99cb-41c7-9473-06ef041ac061</id>
+    </Compile>
+    <Compile Include="Keywords\Network\ConnectDisconnectNetwork.cs">
+      <BoundTo>b31b3aa1-26c6-4120-8c75-ea7327d69a2d</BoundTo>
+      <DependentUpon>ConnectDisconnectNetwork.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5af7d173-9d40-475b-9a3c-07bd044651ea</id>
+    </Compile>
+    <Compile Include="Keywords\Network\ConnectDisconnectNetwork.UserCode.cs">
+      <BoundTo>b31b3aa1-26c6-4120-8c75-ea7327d69a2d</BoundTo>
+      <DependentUpon>ConnectDisconnectNetwork.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d9c35ae5-1a73-419d-8119-4cb831e08b84</id>
+    </Compile>
+    <Compile Include="Keywords\Network\DisableNetwork.cs">
+      <DependentUpon>DisableNetwork.rxrec</DependentUpon>
+      <id>045f316f-f900-4edf-b87e-93918f92b974</id>
+      <BoundTo>2e4565b2-6ad2-497c-a994-3ce70dcfbc06</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Keywords\Network\DisableNetwork.UserCode.cs">
+      <DependentUpon>DisableNetwork.rxrec</DependentUpon>
+      <id>070d6a38-e14f-480a-9687-caadacc8a3b3</id>
+      <BoundTo>2e4565b2-6ad2-497c-a994-3ce70dcfbc06</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Keywords\Network\EnableNetwork.cs">
+      <DependentUpon>EnableNetwork.rxrec</DependentUpon>
+      <id>6bef878d-1d7c-4a92-927f-981b49d7aad1</id>
+      <BoundTo>29ea19b5-ff30-44fe-817e-bebe1819c915</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Keywords\Network\EnableNetwork.UserCode.cs">
+      <DependentUpon>EnableNetwork.rxrec</DependentUpon>
+      <id>92cb222c-fc0f-4d2e-a2b0-5c31faf4612f</id>
+      <BoundTo>29ea19b5-ff30-44fe-817e-bebe1819c915</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Keywords\Network\LoadNetworkConnectionStatus.cs">
+      <BoundTo>f25b69d5-e13c-4630-9e0a-0579c383f405</BoundTo>
+      <DependentUpon>LoadNetworkConnectionStatus.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f588ff17-c06c-4e5b-94ae-d22d038d8d52</id>
+    </Compile>
+    <Compile Include="Keywords\Network\LoadNetworkConnectionStatus.UserCode.cs">
+      <BoundTo>f25b69d5-e13c-4630-9e0a-0579c383f405</BoundTo>
+      <DependentUpon>LoadNetworkConnectionStatus.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7384c2ca-ee4e-40e6-8257-ed1e7f807c83</id>
+    </Compile>
+    <Compile Include="Keywords\Network\OpenNetworkConnectionPanel.cs">
+      <BoundTo>891d33f5-60f0-48a6-9fab-2c11631a09da</BoundTo>
+      <DependentUpon>OpenNetworkConnectionPanel.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a204582a-f54a-4a6e-8b0a-aad188f165b5</id>
+    </Compile>
+    <Compile Include="Keywords\Network\OpenNetworkConnectionPanel.UserCode.cs">
+      <BoundTo>891d33f5-60f0-48a6-9fab-2c11631a09da</BoundTo>
+      <DependentUpon>OpenNetworkConnectionPanel.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>231a93b7-ea92-4a9b-a10e-ed11e5de97dd</id>
+    </Compile>
+    <Compile Include="Keywords\OpenCategory.cs">
+      <DependentUpon>OpenCategory.rxrec</DependentUpon>
+      <id>db5d5033-41cf-4d2b-94c1-adff288890a1</id>
+      <BoundTo>1e778f12-6abc-4bf2-83b6-9e30b9e7d727</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Keywords\OpenCategory.UserCode.cs">
+      <DependentUpon>OpenCategory.rxrec</DependentUpon>
+      <id>1fc66672-579f-47a5-a3c7-9ef1a24483a8</id>
+      <BoundTo>1e778f12-6abc-4bf2-83b6-9e30b9e7d727</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Keywords\QuickStartGuide\CheckQSGOffline.cs">
+      <BoundTo>ce7a104d-a0e4-40c3-9d3f-7794420527c0</BoundTo>
+      <DependentUpon>CheckQSGOffline.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8840e370-7f93-4562-a0a4-c6e3661171fc</id>
+    </Compile>
+    <Compile Include="Keywords\QuickStartGuide\CheckQSGOffline.UserCode.cs">
+      <BoundTo>ce7a104d-a0e4-40c3-9d3f-7794420527c0</BoundTo>
+      <DependentUpon>CheckQSGOffline.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>046b7189-0c64-47bd-80da-3dfdb7771e82</id>
+    </Compile>
+    <Compile Include="Keywords\QuickStartGuide\CheckQSGOnline.cs">
+      <BoundTo>a1cab611-08f5-44d8-8ada-00896b20091c</BoundTo>
+      <DependentUpon>CheckQSGOnline.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>61e611e7-7f0e-455b-803d-7ccc41c57734</id>
+    </Compile>
+    <Compile Include="Keywords\QuickStartGuide\CheckQSGOnline.UserCode.cs">
+      <BoundTo>a1cab611-08f5-44d8-8ada-00896b20091c</BoundTo>
+      <DependentUpon>CheckQSGOnline.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>724ee1d4-496a-47ba-8c8c-b825ed49bbfd</id>
+    </Compile>
+    <Compile Include="Keywords\Recording1.cs">
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f887b0ce-3b8b-4a05-82d3-f20311d74751</id>
+      <BoundTo>7dd7a346-0583-4bc0-9761-087af4098334</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\Recording1.UserCode.cs">
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0832fafa-73eb-46eb-a9d5-3ca103ff5224</id>
+      <BoundTo>7dd7a346-0583-4bc0-9761-087af4098334</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\SignOutDisableAbove.cs">
+      <BoundTo>29bd383f-20cb-4809-ae83-f53c121b48f1</BoundTo>
+      <DependentUpon>SignOutDisableAbove.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>acb0cddd-7289-4fd5-880a-d346ac03503c</id>
+    </Compile>
+    <Compile Include="Keywords\SignOutDisableAbove.UserCode.cs">
+      <BoundTo>29bd383f-20cb-4809-ae83-f53c121b48f1</BoundTo>
+      <DependentUpon>SignOutDisableAbove.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fe2b40d0-f49e-4056-960a-2b2e00c38af1</id>
+    </Compile>
+    <Compile Include="Keywords\SignOutNoneDisableAbove.cs">
+      <DependentUpon>SignOutNoneDisableAbove.rxrec</DependentUpon>
+      <id>6c64e38b-9208-45f6-98fc-78c52d07bada</id>
+      <BoundTo>c57aeb76-bb90-426d-a92d-ad44d3b3ca1d</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Keywords\SignOutNoneDisableAbove.UserCode.cs">
+      <DependentUpon>SignOutNoneDisableAbove.rxrec</DependentUpon>
+      <id>99bb2824-7e6c-4bc4-9a02-d21524011989</id>
+      <BoundTo>c57aeb76-bb90-426d-a92d-ad44d3b3ca1d</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Keywords\SplashScreen\CheckDisplayedSUTModel.cs">
+      <id>f2c2a568-f077-4777-9491-615cfbeb04fb</id>
+      <BoundTo>d4d230a4-dac6-4f58-9510-4d9a81a7367c</BoundTo>
+      <DependentUpon>CheckDisplayedSUTModel.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Keywords\SplashScreen\CheckDisplayedSUTModel.UserCode.cs">
+      <id>b2fd0ee3-9d16-4cf1-97e2-7e35bc902b5a</id>
+      <BoundTo>d4d230a4-dac6-4f58-9510-4d9a81a7367c</BoundTo>
+      <DependentUpon>CheckDisplayedSUTModel.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Keywords\SplashScreen\CheckExpressAndMoveCursor.cs">
+      <id>23bc336f-d0f6-4a11-8e88-b0044ece24ca</id>
+      <BoundTo>75057d77-9fe7-41b3-bbe0-011b6b959728</BoundTo>
+      <DependentUpon>CheckExpressAndMoveCursor.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Keywords\SplashScreen\CheckExpressAndMoveCursor.UserCode.cs">
+      <id>daad6ed0-fd7d-48ff-be56-1a9cbe16bc7f</id>
+      <BoundTo>75057d77-9fe7-41b3-bbe0-011b6b959728</BoundTo>
+      <DependentUpon>CheckExpressAndMoveCursor.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Keywords\SplashScreen\CheckServiceTagAndMoveCursor.cs">
+      <id>c7243d5e-54e1-428e-8b0e-25a3fe04cad8</id>
+      <BoundTo>1ebcc47c-4eb7-4e68-9406-a19cf1ac6511</BoundTo>
+      <DependentUpon>CheckServiceTagAndMoveCursor.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Keywords\SplashScreen\CheckServiceTagAndMoveCursor.UserCode.cs">
+      <id>4981f57e-e39f-4711-b548-dc922b1b5623</id>
+      <BoundTo>1ebcc47c-4eb7-4e68-9406-a19cf1ac6511</BoundTo>
+      <DependentUpon>CheckServiceTagAndMoveCursor.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Keywords\SplashScreen\DisconnectInternetAndRepeatOneToFive.cs">
+      <id>15106059-aef4-440f-afe3-9a95b7288f26</id>
+      <BoundTo>a624f15c-1f1d-4ae0-9b91-2abe360c51ac</BoundTo>
+      <DependentUpon>DisconnectInternetAndRepeatOneToFive.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Keywords\SplashScreen\DisconnectInternetAndRepeatOneToFive.UserCode.cs">
+      <id>2670f2a2-b282-492d-ae14-d65062b353ac</id>
+      <BoundTo>a624f15c-1f1d-4ae0-9b91-2abe360c51ac</BoundTo>
+      <DependentUpon>DisconnectInternetAndRepeatOneToFive.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Keywords\TelemetryEventsCheckFromDAWS\CheckApplicationHeartbeatEventFromDAWS.cs">
+      <id>0f5f47be-a50c-47cb-9482-0337803713be</id>
+      <BoundTo>b21d8008-d8ab-49ff-80fa-282ad17dd6fc</BoundTo>
+      <DependentUpon>CheckApplicationHeartbeatEventFromDAWS.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Keywords\TelemetryEventsCheckFromDAWS\CheckApplicationHeartbeatEventFromDAWS.UserCode.cs">
+      <id>3a9f5d23-a96f-4b8a-9345-b118e960b41d</id>
+      <BoundTo>b21d8008-d8ab-49ff-80fa-282ad17dd6fc</BoundTo>
+      <DependentUpon>CheckApplicationHeartbeatEventFromDAWS.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Keywords\TelemetryEventsCheckFromDAWS\CheckDAWSEventWithOpenDHSTwoTimes.cs">
+      <id>c7fb139e-6dd1-4f6a-aa84-48dcc73c8abb</id>
+      <BoundTo>8d068eb9-2624-4148-ae3e-8ae8c8274817</BoundTo>
+      <DependentUpon>CheckDAWSEventWithOpenDHSTwoTimes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Keywords\TelemetryEventsCheckFromDAWS\CheckDAWSEventWithOpenDHSTwoTimes.UserCode.cs">
+      <id>138df666-357d-4857-be72-a921e89600b8</id>
+      <BoundTo>8d068eb9-2624-4148-ae3e-8ae8c8274817</BoundTo>
+      <DependentUpon>CheckDAWSEventWithOpenDHSTwoTimes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Keywords\TelemetryEventsCheckFromDAWS\CheckSearchItemAndAllEventDetail.cs">
+      <id>b627bda0-c9aa-472c-beeb-37cbdf0e3938</id>
+      <BoundTo>65397a8f-adcc-4cc0-8145-1ec11de7ba97</BoundTo>
+      <DependentUpon>CheckSearchItemAndAllEventDetail.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Keywords\TelemetryEventsCheckFromDAWS\CheckSearchItemAndAllEventDetail.UserCode.cs">
+      <id>97f41c87-f147-439e-a221-820eab3dbe5d</id>
+      <BoundTo>65397a8f-adcc-4cc0-8145-1ec11de7ba97</BoundTo>
+      <DependentUpon>CheckSearchItemAndAllEventDetail.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Keywords\TelemetryEventsCheckFromDAWS\OpenAndCloseDHSRepeatTwoTimes.cs">
+      <id>3b83d335-579e-493e-a02a-b0a6cf7f74f4</id>
+      <BoundTo>7946fd7f-9723-4d60-a514-ff92d7556eb1</BoundTo>
+      <DependentUpon>OpenAndCloseDHSRepeatTwoTimes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Keywords\TelemetryEventsCheckFromDAWS\OpenAndCloseDHSRepeatTwoTimes.UserCode.cs">
+      <id>63f31485-7b47-49c6-ad26-e53427146d74</id>
+      <BoundTo>7946fd7f-9723-4d60-a514-ff92d7556eb1</BoundTo>
+      <DependentUpon>OpenAndCloseDHSRepeatTwoTimes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Keywords\TelemetryEventsCheckFromDAWS\OpenDellHelpAndSupport.cs">
+      <id>083c722f-42e7-4e6c-af6c-d0bbcd7a62ff</id>
+      <BoundTo>10286a5b-11be-428a-8822-27886d4a9215</BoundTo>
+      <DependentUpon>OpenDellHelpAndSupport.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Keywords\TelemetryEventsCheckFromDAWS\OpenDellHelpAndSupport.UserCode.cs">
+      <id>011cfe7d-d183-4448-b87d-aeb4d4741e8f</id>
+      <BoundTo>10286a5b-11be-428a-8822-27886d4a9215</BoundTo>
+      <DependentUpon>OpenDellHelpAndSupport.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Keywords\TelemetryEventsCheckFromDAWS\SearchOnDHS.cs">
+      <id>b163d88a-8113-487e-81ed-671b362a348f</id>
+      <BoundTo>77841725-42bc-4bff-93ee-2967ae3e9cc6</BoundTo>
+      <DependentUpon>SearchOnDHS.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Keywords\TelemetryEventsCheckFromDAWS\SearchOnDHS.UserCode.cs">
+      <id>d4b6ba26-82ca-4b86-8caf-a04f9ee19522</id>
+      <BoundTo>77841725-42bc-4bff-93ee-2967ae3e9cc6</BoundTo>
+      <DependentUpon>SearchOnDHS.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Keywords\Validation\Check4FeatureArticles.cs">
+      <BoundTo>b886e1cb-b1d2-4629-9483-d7abf7b43402</BoundTo>
+      <DependentUpon>Check4FeatureArticles.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e3a0281c-4b1b-47ff-9813-33f4561c7496</id>
+    </Compile>
+    <Compile Include="Keywords\Validation\Check4FeatureArticles.UserCode.cs">
+      <BoundTo>b886e1cb-b1d2-4629-9483-d7abf7b43402</BoundTo>
+      <DependentUpon>Check4FeatureArticles.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c5f82ffc-d293-407e-8772-81fade5ac0ee</id>
+    </Compile>
+    <Compile Include="Keywords\Validation\Check5HelpCategories.cs">
+      <BoundTo>3d06f9c4-ac27-48fb-89ef-b2c8fc818ee2</BoundTo>
+      <DependentUpon>Check5HelpCategories.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>59a6950c-84e4-4817-bc95-fd1ec029e7b9</id>
+    </Compile>
+    <Compile Include="Keywords\Validation\Check5HelpCategories.UserCode.cs">
+      <BoundTo>3d06f9c4-ac27-48fb-89ef-b2c8fc818ee2</BoundTo>
+      <DependentUpon>Check5HelpCategories.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>91587761-fc31-4385-b135-889267b06cc2</id>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckAfterUninstallDHS.cs">
+      <DependentUpon>CheckAfterUninstallDHS.rxrec</DependentUpon>
+      <id>b5713758-df79-44de-b104-021bf2056fa7</id>
+      <RecorderCode>true</RecorderCode>
+      <BoundTo>649a2192-eac5-41e6-893a-a240463cc039</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckAfterUninstallDHS.UserCode.cs">
+      <DependentUpon>CheckAfterUninstallDHS.rxrec</DependentUpon>
+      <id>39d258d6-e018-4389-8304-6492f3fb0c66</id>
+      <UserCode>true</UserCode>
+      <BoundTo>649a2192-eac5-41e6-893a-a240463cc039</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckDHSAfterMinimize.cs">
+      <DependentUpon>CheckDHSAfterMinimize.rxrec</DependentUpon>
+      <id>5a3ac43c-df50-4a52-a10d-8b4de78a6937</id>
+      <BoundTo>3f50cd20-bb0c-4dd8-b408-6354a5f1a039</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckDHSAfterMinimize.UserCode.cs">
+      <DependentUpon>CheckDHSAfterMinimize.rxrec</DependentUpon>
+      <id>53cf9f38-ecd7-45e4-8fa9-11e346ca8c0c</id>
+      <BoundTo>3f50cd20-bb0c-4dd8-b408-6354a5f1a039</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckDHSAppName.cs">
+      <DependentUpon>CheckDHSAppName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2c4a7c63-460a-467d-910b-f5a06fcaf966</id>
+      <BoundTo>782e0e45-df2a-4ed2-a7b9-fe683074aeec</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckDHSAppName.UserCode.cs">
+      <DependentUpon>CheckDHSAppName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>52422bf4-fbf7-4f6e-8436-5b87bbf03558</id>
+      <BoundTo>782e0e45-df2a-4ed2-a7b9-fe683074aeec</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckDHSInstalled.cs">
+      <DependentUpon>CheckDHSInstalled.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d3bdfa8c-dda9-407a-932e-61e3b864be20</id>
+      <BoundTo>95a5060a-f298-4b88-a348-4952625c81dc</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckDHSInstalled.UserCode.cs">
+      <DependentUpon>CheckDHSInstalled.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7853bcf5-84f5-4ddb-a4ce-497cbf3b12a5</id>
+      <BoundTo>95a5060a-f298-4b88-a348-4952625c81dc</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckDHSLanguage.cs">
+      <DependentUpon>CheckDHSLanguage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e5c1a87d-e68d-4704-9eeb-d7c82e2bf298</id>
+      <BoundTo>69982f8b-f06b-454a-9212-998f49ddc676</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckDHSLanguage.UserCode.cs">
+      <DependentUpon>CheckDHSLanguage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>00fdf3fe-ccb6-42d4-841f-6fb18b72f7a5</id>
+      <BoundTo>69982f8b-f06b-454a-9212-998f49ddc676</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckFindAccessories.cs">
+      <BoundTo>83a251b5-9c43-44ab-bf73-66c221c35168</BoundTo>
+      <DependentUpon>CheckFindAccessories.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b7c449f9-2f9e-4d07-9941-fedf91de8b2a</id>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckFindAccessories.UserCode.cs">
+      <BoundTo>83a251b5-9c43-44ab-bf73-66c221c35168</BoundTo>
+      <DependentUpon>CheckFindAccessories.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dcc21260-92a0-4cf8-a27b-a97db58aca43</id>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckFunctionFeedBackPage.cs">
+      <DependentUpon>CheckFunctionFeedBackPage.rxrec</DependentUpon>
+      <id>b794a333-6ff5-4547-bcad-5c10da2e552f</id>
+      <BoundTo>e4caf6e9-6927-43ca-9eef-6e5da955baaf</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckFunctionFeedBackPage.UserCode.cs">
+      <DependentUpon>CheckFunctionFeedBackPage.rxrec</DependentUpon>
+      <id>b53e1f00-b0c6-46f4-9eac-09d4d6e26648</id>
+      <BoundTo>e4caf6e9-6927-43ca-9eef-6e5da955baaf</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckHeartbeatEvent.cs">
+      <DependentUpon>CheckHeartbeatEvent.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>616e1849-0d06-41db-9c1a-89c1f8791a69</id>
+      <BoundTo>7a198faf-1cc9-4151-83df-ac8179eb04a3</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckHeartbeatEvent.UserCode.cs">
+      <DependentUpon>CheckHeartbeatEvent.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>24586bdb-5dde-4412-b684-b874736a2c49</id>
+      <BoundTo>7a198faf-1cc9-4151-83df-ac8179eb04a3</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckImageBeautyShot.cs">
+      <DependentUpon>CheckImageBeautyShot.rxrec</DependentUpon>
+      <id>8d842fcd-3a6b-4839-b5f3-f4b3867ca5dc</id>
+      <BoundTo>b1b3bdc7-a5bc-4884-8321-da982cd0a54b</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckImageBeautyShot.UserCode.cs">
+      <DependentUpon>CheckImageBeautyShot.rxrec</DependentUpon>
+      <id>ecb50699-2a3e-4ec2-925e-5b98fb2f927e</id>
+      <BoundTo>b1b3bdc7-a5bc-4884-8321-da982cd0a54b</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckLanguageFeedBackPage.cs">
+      <DependentUpon>CheckLanguageFeedBackPage.rxrec</DependentUpon>
+      <id>2001007b-247c-44b7-a859-cb7c24d1310e</id>
+      <BoundTo>a7b4988d-9240-4576-82a0-6482c4e8b69b</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckLanguageFeedBackPage.UserCode.cs">
+      <DependentUpon>CheckLanguageFeedBackPage.rxrec</DependentUpon>
+      <id>efac1b00-e460-4abd-8122-2f0305922743</id>
+      <BoundTo>a7b4988d-9240-4576-82a0-6482c4e8b69b</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckLaunchMoreThan1Event.cs">
+      <DependentUpon>CheckLaunchMoreThan1Event.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4149736d-cb7a-41df-87f8-5e2dda63e9fc</id>
+      <BoundTo>9c2390ad-7d7c-4957-9af4-40ae7e6941cd</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckLaunchMoreThan1Event.UserCode.cs">
+      <DependentUpon>CheckLaunchMoreThan1Event.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8c549f4e-0614-4f2a-a4af-04595fcb8873</id>
+      <BoundTo>9c2390ad-7d7c-4957-9af4-40ae7e6941cd</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckLeftMenu.cs">
+      <BoundTo>38ac2afd-6344-4942-a18d-8cdd8bfb4f76</BoundTo>
+      <DependentUpon>CheckLeftMenu.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9341d3ee-3a33-431a-b59d-198746f5c252</id>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckLeftMenu.UserCode.cs">
+      <BoundTo>38ac2afd-6344-4942-a18d-8cdd8bfb4f76</BoundTo>
+      <DependentUpon>CheckLeftMenu.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f676afe0-9295-4b2a-af7b-5a43655fcbd7</id>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckSearchFailedResult.cs">
+      <DependentUpon>CheckSearchFailedResult.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>de0dc027-b313-4b31-8721-f5330ea48204</id>
+      <BoundTo>cc27843e-38f4-4f98-b03a-0e5394415d88</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckSearchFailedResult.UserCode.cs">
+      <DependentUpon>CheckSearchFailedResult.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d5900abc-8b06-490c-9185-467ddbe1de78</id>
+      <BoundTo>cc27843e-38f4-4f98-b03a-0e5394415d88</BoundTo>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckSNPPage.cs">
+      <BoundTo>a1799dea-d8ee-427c-8826-ba13a746d2d7</BoundTo>
+      <DependentUpon>CheckSNPPage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8c2a23b1-d5bd-4c74-a693-a80d91f0817b</id>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckSNPPage.UserCode.cs">
+      <BoundTo>a1799dea-d8ee-427c-8826-ba13a746d2d7</BoundTo>
+      <DependentUpon>CheckSNPPage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7f6495e8-12b8-4c68-af47-cfee478d6adc</id>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckSplashScreen.cs">
+      <DependentUpon>CheckSplashScreen.rxrec</DependentUpon>
+      <id>cf95cb0d-ff48-4ebd-a123-eed9d48807a1</id>
+      <BoundTo>af145f22-f257-4224-ad10-a05b00cc758a</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckSplashScreen.UserCode.cs">
+      <DependentUpon>CheckSplashScreen.rxrec</DependentUpon>
+      <id>9f4a91cd-ff9e-4968-818d-3d1b468fc8c3</id>
+      <BoundTo>af145f22-f257-4224-ad10-a05b00cc758a</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckTabsShowUp.cs">
+      <BoundTo>b2953471-be50-47ed-afd0-937056d5a8c9</BoundTo>
+      <DependentUpon>CheckTabsShowUp.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ea9c6990-1a28-40b2-91ef-937e9b2cdabd</id>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckTabsShowUp.UserCode.cs">
+      <BoundTo>b2953471-be50-47ed-afd0-937056d5a8c9</BoundTo>
+      <DependentUpon>CheckTabsShowUp.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>791206de-c1d1-41e5-a479-3ad0fa5ee43e</id>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckTitleDHSAndNoMaximineButton.cs">
+      <DependentUpon>CheckTitleDHSAndNoMaximineButton.rxrec</DependentUpon>
+      <id>7288367f-1a78-4c9d-8ed2-6241b9658313</id>
+      <BoundTo>3eccfc3e-7b93-4bf3-9247-677ff0ccbf1e</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckTitleDHSAndNoMaximineButton.UserCode.cs">
+      <DependentUpon>CheckTitleDHSAndNoMaximineButton.rxrec</DependentUpon>
+      <id>9a5c3d8e-abd4-4a53-80f3-f212e8e5e10b</id>
+      <BoundTo>3eccfc3e-7b93-4bf3-9247-677ff0ccbf1e</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckTooltipServiceTagAndServiceCode.cs">
+      <DependentUpon>CheckTooltipServiceTagAndServiceCode.rxrec</DependentUpon>
+      <id>7474e34c-43a3-424c-8009-0be62ad601d9</id>
+      <BoundTo>58959e04-b9fc-4d96-b449-adda8aa7f72b</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckTooltipServiceTagAndServiceCode.UserCode.cs">
+      <DependentUpon>CheckTooltipServiceTagAndServiceCode.rxrec</DependentUpon>
+      <id>8f081840-4087-4f3e-b481-64a002c1668a</id>
+      <BoundTo>58959e04-b9fc-4d96-b449-adda8aa7f72b</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckWindowsTroubleShooter.cs">
+      <DependentUpon>CheckWindowsTroubleShooter.rxrec</DependentUpon>
+      <id>ee24b3ed-a46e-4519-a3ec-712867f31a66</id>
+      <BoundTo>79e92a51-275e-4363-83dd-673c00602627</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Keywords\Validation\CheckWindowsTroubleShooter.UserCode.cs">
+      <DependentUpon>CheckWindowsTroubleShooter.rxrec</DependentUpon>
+      <id>e0a3f9b3-c8e1-4e6a-a604-a05ccf446685</id>
+      <BoundTo>79e92a51-275e-4363-83dd-673c00602627</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Objects\DHSArticle.cs">
+      <id>bbfa019d-3e0f-4961-9fe5-0aeb5b586450</id>
+    </Compile>
+    <Compile Include="Objects\DHSCategory.cs">
+      <id>efb71d59-3921-47d3-af3c-52666e29b6b6</id>
+    </Compile>
+    <Compile Include="Objects\firstRun.cs">
+      <id>b5d95dbc-6fa9-473e-b13f-58714bcfe981</id>
+    </Compile>
+    <Compile Include="Objects\Internet.cs">
+      <id>d2c1b78a-c9a3-47ab-a2f7-21abd38da830</id>
+    </Compile>
+    <Compile Include="Objects\MessageBoxManualsOffline.cs">
+      <id>e3b45700-93a7-4f09-8e60-c888efa954c9</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>3ce0b24b-762e-435c-a836-5fb06ea58250</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>e7226a22-1ce4-42f6-8c0d-757c867d8494</id>
+    </None>
+    <None Include="DHSAutomationRepository.rximg">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <DependentUpon>DHSAutomationRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>c8be9388-a2cf-4979-9582-0fa9f68e1950</id>
+    </None>
+    <None Include="DHSAutomationRepository.rxrep">
+      <id>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</id>
+      <repoid>b422637d-d4de-40e5-bf0f-b69169035549</repoid>
+      <reporootid>424dee14-8825-40c4-9a5b-69564e1ca82b</reporootid>
+    </None>
+    <None Include="Document\DHS2.2.26.0  TCs.docx">
+      <id>f5d6e90d-d33e-4930-92ec-d88e20ab070f</id>
+    </None>
+    <None Include="Keywords\ChangeLanguage.rxrec">
+      <id>283cfe4c-16ca-483a-a8c9-54d96d33e66a</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>5110d38b-fdba-4df5-8ebc-549d97bac8e2</recordtableid>
+    </None>
+    <None Include="Keywords\CleanUp.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>fb753daf-071c-49e1-a930-3258681f8810</id>
+      <recordtableid>b48ef8fd-24ad-43a6-8de6-e306846c98a3</recordtableid>
+    </None>
+    <None Include="Keywords\ContentSelfupdate\AddConfig.rxrec">
+      <id>fdf150e8-5f46-40cb-8d2d-c3afad6aa93f</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>ed8c63f3-8858-4a2d-98ba-a9d65df32ff9</recordtableid>
+    </None>
+    <None Include="Keywords\ContentSelfupdate\CheckDowloadContent.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>3881c6a1-40c5-42cd-bfc0-fb3a6477c438</id>
+      <recordtableid>7a7e2165-aff5-48e6-b926-812390926d12</recordtableid>
+    </None>
+    <None Include="Keywords\ContentSelfupdate\CheckLog.rxrec">
+      <id>3fdd5828-4a6a-49ef-922e-cb2e8e11841b</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>505e0f18-6a3f-43a9-ab24-81f19969f553</recordtableid>
+    </None>
+    <None Include="Keywords\ContentSelfupdate\CheckUpdatedContent.rxrec">
+      <id>722b8fef-d12c-4f80-95ad-89d78df59b52</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>2312ab7d-ead1-4d67-b25e-7b478c77e57e</recordtableid>
+    </None>
+    <None Include="Keywords\ContentSelfupdate\CheckUpdateLanguage.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>907b196f-aa0f-4240-b83a-5c0738891365</id>
+      <recordtableid>4db81fec-a24d-49e9-9cd3-720a9381afb7</recordtableid>
+    </None>
+    <None Include="Keywords\ContentSelfupdate\CompleteRemove.rxrec">
+      <id>0bec0bd8-04a4-4e5f-94e3-9b802d502ad0</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>201c8ccb-a868-40b2-b3d1-b3fecee82c8b</recordtableid>
+    </None>
+    <None Include="Keywords\ContentSelfupdate\ContentDownloadComplete.rxrec">
+      <id>179c05b4-13a2-4c0f-b5b3-c436dbfe2113</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>f4bdea0e-bd2a-4b70-8fa0-47991c7babd8</recordtableid>
+    </None>
+    <None Include="Keywords\ContentSelfupdate\RemoveLog.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>56db53fc-55b3-4d32-b890-02ed3204ac3e</id>
+      <recordtableid>93185e72-c99c-4791-8f04-02b6ac152838</recordtableid>
+    </None>
+    <None Include="Keywords\DellSystemInfo\LoadDellSystemInfo.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>7c69dc51-99f0-4e0f-8ddc-b528b2903a4a</id>
+      <recordtableid>7510020c-e7af-435c-9ec5-7968cb206d20</recordtableid>
+    </None>
+    <None Include="Keywords\DoSearch.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>be8db006-11d3-4fff-8e31-81314ec91032</id>
+      <recordtableid>cc4b6bbd-3d99-4198-ae91-93ca7f70845d</recordtableid>
+    </None>
+    <None Include="Keywords\FilterByServiceTag.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>d716afd8-afba-47d0-82f5-49e8acd5463b</id>
+      <recordtableid>6a4db250-b992-4fd8-8fc3-d7b8eef77b70</recordtableid>
+    </None>
+    <None Include="Keywords\General\CloseDHS.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>2b56ae90-b610-4d24-a882-d80ea51e891b</id>
+      <recordtableid>a55804d2-fdc7-4b36-8db3-56429f26da86</recordtableid>
+    </None>
+    <None Include="Keywords\General\CloseTelemetry.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>956bc3db-f279-471f-b2b7-b3d171f6bd1c</id>
+      <recordtableid>409cd734-66da-411a-8e2b-ed8c1eae03cf</recordtableid>
+    </None>
+    <None Include="Keywords\General\InstallDHS.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>71e7f616-f875-4203-9045-ab7b40e6b576</id>
+      <recordtableid>1cdbe4c9-c589-4152-9f5d-7595a30eacff</recordtableid>
+    </None>
+    <None Include="Keywords\General\OpenDHS.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>26692cb7-d12e-4d8b-a21d-2a60e4fdbe6b</id>
+      <recordtableid>d6244750-0dd9-4c0f-8d1c-a26ed67c2184</recordtableid>
+    </None>
+    <None Include="Keywords\General\OpenTelemetry.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>a07b93ee-b9d2-4f9f-9855-248ea67b5467</id>
+      <recordtableid>65800faa-58f3-48dd-b85d-b9c2302c694e</recordtableid>
+    </None>
+    <None Include="Keywords\General\OpenWarranty.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>d8590c3a-f156-4e54-acc2-4ad6a85277bb</id>
+      <recordtableid>b88585cb-c90c-4d42-a2bc-28323e8d057a</recordtableid>
+    </None>
+    <None Include="Keywords\General\UninstallDHS.rxrec">
+      <id>6efcbce2-b750-45db-b17a-189766430502</id>
+      <recordtableid>59c268c4-bf6b-403d-bf55-25e061c23761</recordtableid>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+    </None>
+    <None Include="Keywords\LaunchOtherSW\ChangeDateExpire.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>68b79a0e-b411-4ee0-8aa7-d4680afb75e7</id>
+      <recordtableid>d0037fd2-470d-42c8-802b-a1a7cb309556</recordtableid>
+    </None>
+    <None Include="Keywords\LaunchOtherSW\ChangeDateLess30.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>614d9bdc-4710-4f23-8859-4c5a84c24d0f</id>
+      <recordtableid>37cba0cd-fb42-4729-b25c-8dde1df4b7ac</recordtableid>
+    </None>
+    <None Include="Keywords\LaunchOtherSW\ChangeDateMore30.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>8b50cc42-2ef3-497e-9265-0cde996ee72d</id>
+      <recordtableid>841168a4-ec55-4421-aab7-418ace471523</recordtableid>
+    </None>
+    <None Include="Keywords\LaunchOtherSW\CheckMDLCSConfig.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>f7b5bc2c-9453-4e1b-9d0d-64cda14b590b</id>
+      <recordtableid>c00e2791-308b-464d-a13c-0211de613988</recordtableid>
+    </None>
+    <None Include="Keywords\LaunchOtherSW\CheckWarrantAfterChangeTime.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>e3999548-ea48-4873-8e33-0f3784ed359a</id>
+      <recordtableid>01c5e517-0588-4bad-98dc-89e6e868a46f</recordtableid>
+    </None>
+    <None Include="Keywords\LaunchOtherSW\CheckWarrantyNoRegistedText.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>c598f0d7-a214-4cc2-8d33-5f5888d3a719</id>
+      <recordtableid>d16b3ee9-377e-415b-840b-b21c6a9b9611</recordtableid>
+    </None>
+    <None Include="Keywords\LaunchOtherSW\DellUpdateDirverStatus.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>ca34f4ed-c019-498b-ad64-8a8fd374fefa</id>
+      <recordtableid>3d4c9a85-b1f0-4216-b5ae-e6d8be99a519</recordtableid>
+    </None>
+    <None Include="Keywords\LaunchOtherSW\DellUpdateInstall.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>7ae978d9-fb2a-437d-b1b9-19b9acdf5450</id>
+      <recordtableid>8834516d-026d-478a-becb-ec79e3da1ade</recordtableid>
+    </None>
+    <None Include="Keywords\LaunchOtherSW\DellUpdateUninstall.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>9d51640d-1ede-4d43-a505-bfbaf19603de</id>
+      <recordtableid>4223594a-398a-4d64-803e-20947396e70c</recordtableid>
+    </None>
+    <None Include="Keywords\LaunchOtherSW\DisableDellUpdate.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>dab803b2-16df-4ca0-be06-0a7e7ea9c05c</id>
+      <recordtableid>88fd0144-f5a9-4f72-ba1e-3a375d445503</recordtableid>
+    </None>
+    <None Include="Keywords\LaunchOtherSW\EnableDellUpdate.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>fd8ad281-1c6e-40ae-8afd-eb32bfe001fa</id>
+      <recordtableid>d5867ece-2c69-491d-a22c-024e1ee4ee7d</recordtableid>
+    </None>
+    <None Include="Keywords\LaunchOtherSW\FeedbackCheck.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>e2d1df8e-6efe-4d77-8375-5bde9deac1f8</id>
+      <recordtableid>e97be1a8-9395-45b9-b80f-433e8195737d</recordtableid>
+    </None>
+    <None Include="Keywords\LaunchOtherSW\GetWarrant.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>e8e5f555-e028-410e-b5e8-481fcb292a6e</id>
+      <recordtableid>1619ca41-0d6b-47cc-a64d-fd9cdcd5de62</recordtableid>
+    </None>
+    <None Include="Keywords\LaunchOtherSW\Manual.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>9bb6a288-1dcb-47d0-8f84-2d25e962c4db</id>
+      <recordtableid>e0e050d7-3cba-4dcb-a83a-663259868354</recordtableid>
+    </None>
+    <None Include="Keywords\LaunchOtherSW\RegistingDellProduct.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>ea7a6600-1d06-4878-93d2-4ac70a9d149d</id>
+      <recordtableid>5dee1b64-40bc-4365-a284-98aabd90ee82</recordtableid>
+    </None>
+    <None Include="Keywords\LaunchOtherSW\RemoveKickstart.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>ad4c5abf-0662-4e84-b5a6-590a1a526aac</id>
+      <recordtableid>af612368-18dc-4d83-a9c3-7bf23d53366f</recordtableid>
+    </None>
+    <None Include="Keywords\LaunchOtherSW\RestoreKickstart.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>9404d657-9bb4-40d5-aca9-b80659319e97</id>
+      <recordtableid>2977f7dc-deee-412d-ac43-117d5990f554</recordtableid>
+    </None>
+    <None Include="Keywords\LaunchOtherSW\RestoreSupportAssit.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>16184b78-d1c8-441a-bfc3-c8515c7d83f2</id>
+      <recordtableid>3a9e655b-0213-4bbc-8d27-2582f89583ca</recordtableid>
+    </None>
+    <None Include="Keywords\LaunchOtherSW\RestoreTime.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>3823757c-9a31-4f4d-b8ca-1be7e9aee2d3</id>
+      <recordtableid>0de91e41-7c1b-414d-8bf5-b4a3c18a9542</recordtableid>
+    </None>
+    <None Include="Keywords\LaunchOtherSW\SupportAssitInstalled.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>2cf55ac3-2e79-46aa-ab2d-941d110b30ae</id>
+      <recordtableid>9844acd5-e43d-468b-a9ef-cf9f5e6d8389</recordtableid>
+    </None>
+    <None Include="Keywords\LaunchOtherSW\RemoveSupportAssit.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>121ffee6-8918-467c-91c5-cc69e50871d8</id>
+      <recordtableid>7f780e14-29a3-4c3a-9524-c0d52ab567fc</recordtableid>
+    </None>
+    <None Include="Keywords\LaunchOtherSW\SupportAssitNotInstalled.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>607b41a9-dd12-4255-914b-76c40b27bd12</id>
+      <recordtableid>4456df8e-091c-42c0-ba34-58644d17f80b</recordtableid>
+    </None>
+    <None Include="Keywords\LaunchOtherSW\WarrantyNoRegisWithKickstart.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>34b7b234-36e5-4a8d-af16-afdd27bd4fdd</id>
+      <recordtableid>de96fa4d-3d52-42e1-a23a-f44c85b15f44</recordtableid>
+    </None>
+    <None Include="Keywords\LaunchOtherSW\WarrantyNoRegisWithoutKickstart.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>788795d4-0e82-4e32-95a1-41ca8f0e3bdb</id>
+      <recordtableid>86274fc2-2361-4233-a283-3f2a7d31195f</recordtableid>
+    </None>
+    <None Include="Keywords\LaunchOtherSW\WarrantyRegis.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>6b62f9bc-e364-4ef0-a6fc-996cd632a2ac</id>
+      <recordtableid>e4dd4025-5168-4040-9e1b-d8d43bf36591</recordtableid>
+    </None>
+    <None Include="Keywords\Network\CloseNetworkConnectionPanel.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>e60cefbd-09ea-40a0-8ef2-e955592d8ae8</id>
+      <recordtableid>d1b4041c-adfe-4dfb-9da5-433798424bde</recordtableid>
+    </None>
+    <None Include="Keywords\Network\ConnectDisconnectNetwork.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>b31b3aa1-26c6-4120-8c75-ea7327d69a2d</id>
+      <recordtableid>b9d3e154-6baf-45bb-846a-755fa8bad310</recordtableid>
+    </None>
+    <None Include="Keywords\Network\DisableNetwork.rxrec">
+      <id>2e4565b2-6ad2-497c-a994-3ce70dcfbc06</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>e5794c0a-9718-4879-9469-cfee56e27685</recordtableid>
+    </None>
+    <None Include="Keywords\Network\EnableNetwork.rxrec">
+      <id>29ea19b5-ff30-44fe-817e-bebe1819c915</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>3f07d2a8-6717-42c7-901a-297f463c500a</recordtableid>
+    </None>
+    <None Include="Keywords\Network\LoadNetworkConnectionStatus.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>f25b69d5-e13c-4630-9e0a-0579c383f405</id>
+      <recordtableid>2a693cd1-3b0a-43e4-a2f9-9676665778ef</recordtableid>
+    </None>
+    <None Include="Keywords\Network\OpenNetworkConnectionPanel.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>891d33f5-60f0-48a6-9fab-2c11631a09da</id>
+      <recordtableid>07d76c97-30e1-40e6-a122-8de75663e42b</recordtableid>
+    </None>
+    <None Include="Keywords\OpenCategory.rxrec">
+      <id>1e778f12-6abc-4bf2-83b6-9e30b9e7d727</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>b0d26b47-9139-48d9-ba9d-4373e09c484a</recordtableid>
+    </None>
+    <None Include="Keywords\QuickStartGuide\CheckQSGOffline.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>ce7a104d-a0e4-40c3-9d3f-7794420527c0</id>
+      <recordtableid>06d4d6bd-c83b-4642-8e86-e71aa2db6915</recordtableid>
+    </None>
+    <None Include="Keywords\QuickStartGuide\CheckQSGOnline.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>a1cab611-08f5-44d8-8ada-00896b20091c</id>
+      <recordtableid>c047bf18-00bf-4e7c-a87c-c28066fa410b</recordtableid>
+    </None>
+    <None Include="Keywords\Recording1.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>7dd7a346-0583-4bc0-9761-087af4098334</id>
+      <recordtableid>47d2bb0f-dcbc-47f4-9e16-4b69150de92b</recordtableid>
+    </None>
+    <None Include="Keywords\SignOutDisableAbove.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>29bd383f-20cb-4809-ae83-f53c121b48f1</id>
+      <recordtableid>6dafdb4f-42a9-46f7-9f40-423c0704d025</recordtableid>
+    </None>
+    <None Include="Keywords\SignOutNoneDisableAbove.rxrec">
+      <id>c57aeb76-bb90-426d-a92d-ad44d3b3ca1d</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>569f5c7b-9cfc-49e9-8793-2fdde9dfa2a9</recordtableid>
+    </None>
+    <None Include="Keywords\SplashScreen\CheckDisplayedSUTModel.rxrec">
+      <id>d4d230a4-dac6-4f58-9510-4d9a81a7367c</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>f76995b3-2f45-4462-b15d-781efb739728</recordtableid>
+    </None>
+    <None Include="Keywords\SplashScreen\CheckExpressAndMoveCursor.rxrec">
+      <id>75057d77-9fe7-41b3-bbe0-011b6b959728</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>59f6067d-67ed-44e4-9b0d-072dc05c7e81</recordtableid>
+    </None>
+    <None Include="Keywords\SplashScreen\CheckServiceTagAndMoveCursor.rxrec">
+      <id>1ebcc47c-4eb7-4e68-9406-a19cf1ac6511</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>639bdc57-b6f2-4044-94c7-3a15ba4751e0</recordtableid>
+    </None>
+    <None Include="Keywords\SplashScreen\DisconnectInternetAndRepeatOneToFive.rxrec">
+      <id>a624f15c-1f1d-4ae0-9b91-2abe360c51ac</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>84239eaa-83ca-4af7-9991-67d4e5f8146c</recordtableid>
+    </None>
+    <None Include="Keywords\TelemetryEventsCheckFromDAWS\CheckApplicationHeartbeatEventFromDAWS.rxrec">
+      <id>b21d8008-d8ab-49ff-80fa-282ad17dd6fc</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>50c573a9-627f-4562-8436-2a2c0e521ebc</recordtableid>
+    </None>
+    <None Include="Keywords\TelemetryEventsCheckFromDAWS\CheckDAWSEventWithOpenDHSTwoTimes.rxrec">
+      <id>8d068eb9-2624-4148-ae3e-8ae8c8274817</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>c43554cd-021e-456e-a9f7-9c91828cc00b</recordtableid>
+    </None>
+    <None Include="Keywords\TelemetryEventsCheckFromDAWS\CheckSearchItemAndAllEventDetail.rxrec">
+      <id>65397a8f-adcc-4cc0-8145-1ec11de7ba97</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>2aba2ae5-2bd3-4856-8d9d-aff821afc217</recordtableid>
+    </None>
+    <None Include="Keywords\TelemetryEventsCheckFromDAWS\OpenAndCloseDHSRepeatTwoTimes.rxrec">
+      <id>7946fd7f-9723-4d60-a514-ff92d7556eb1</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>b782ea62-dfd2-4868-9468-6ef85f76c8e5</recordtableid>
+    </None>
+    <None Include="Keywords\TelemetryEventsCheckFromDAWS\OpenDellHelpAndSupport.rxrec">
+      <id>10286a5b-11be-428a-8822-27886d4a9215</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>7f4108fc-4212-44f7-a777-8be2c2a3a10f</recordtableid>
+    </None>
+    <None Include="Keywords\TelemetryEventsCheckFromDAWS\SearchOnDHS.rxrec">
+      <id>77841725-42bc-4bff-93ee-2967ae3e9cc6</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>16883669-6143-41d5-aa3c-79a43cbbae21</recordtableid>
+    </None>
+    <None Include="Keywords\Validation\Check4FeatureArticles.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>b886e1cb-b1d2-4629-9483-d7abf7b43402</id>
+      <recordtableid>2fe50c26-087a-47ee-8462-f1e859d518d8</recordtableid>
+    </None>
+    <None Include="Keywords\Validation\Check5HelpCategories.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>3d06f9c4-ac27-48fb-89ef-b2c8fc818ee2</id>
+      <recordtableid>db4f1dfe-8999-42c9-acd8-a8d5742f33be</recordtableid>
+    </None>
+    <None Include="Keywords\Validation\CheckAfterUninstallDHS.rxrec">
+      <id>649a2192-eac5-41e6-893a-a240463cc039</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>a92f1822-76f7-426e-9dd1-05030ce7d390</recordtableid>
+    </None>
+    <None Include="Keywords\Validation\CheckDHSAfterMinimize.rxrec">
+      <id>3f50cd20-bb0c-4dd8-b408-6354a5f1a039</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>036179dd-c20b-4395-80ec-9b443f952c91</recordtableid>
+    </None>
+    <None Include="Keywords\Validation\CheckDHSAppName.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>782e0e45-df2a-4ed2-a7b9-fe683074aeec</id>
+      <recordtableid>974304ed-0ae1-4e1a-946b-f19c4d2aff30</recordtableid>
+    </None>
+    <None Include="Keywords\Validation\CheckDHSInstalled.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>95a5060a-f298-4b88-a348-4952625c81dc</id>
+      <recordtableid>48a87b12-4d5c-4498-a61e-6a0de05caf50</recordtableid>
+    </None>
+    <None Include="Keywords\Validation\CheckDHSLanguage.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>69982f8b-f06b-454a-9212-998f49ddc676</id>
+      <recordtableid>7081d396-5dfd-4d61-800d-8b0389f0de90</recordtableid>
+    </None>
+    <None Include="Keywords\Validation\CheckFindAccessories.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>83a251b5-9c43-44ab-bf73-66c221c35168</id>
+      <recordtableid>a7086387-181b-43e6-9f5c-6f59aaabdd5c</recordtableid>
+    </None>
+    <None Include="Keywords\Validation\CheckFunctionFeedBackPage.rxrec">
+      <id>e4caf6e9-6927-43ca-9eef-6e5da955baaf</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>ab5103c1-9f8b-4345-86e3-bab3a8428895</recordtableid>
+    </None>
+    <None Include="Keywords\Validation\CheckHeartbeatEvent.rxrec">
+      <id>7a198faf-1cc9-4151-83df-ac8179eb04a3</id>
+      <recordtableid>3e38cfb7-011f-40a0-98f8-52cfb9cabb52</recordtableid>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+    </None>
+    <None Include="Keywords\Validation\CheckImageBeautyShot.rxrec">
+      <id>b1b3bdc7-a5bc-4884-8321-da982cd0a54b</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>a486ddef-6e77-4291-9d57-0f895ea03c14</recordtableid>
+    </None>
+    <None Include="Keywords\Validation\CheckLanguageFeedBackPage.rxrec">
+      <id>a7b4988d-9240-4576-82a0-6482c4e8b69b</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>18e2173f-d773-453f-bc9a-600b3f841408</recordtableid>
+    </None>
+    <None Include="Keywords\Validation\CheckLaunchMoreThan1Event.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>9c2390ad-7d7c-4957-9af4-40ae7e6941cd</id>
+      <recordtableid>d167ece9-3abe-4661-91ec-668440aadbe6</recordtableid>
+    </None>
+    <None Include="Keywords\Validation\CheckLeftMenu.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>38ac2afd-6344-4942-a18d-8cdd8bfb4f76</id>
+      <recordtableid>ffeea95d-2a25-4b33-906a-d02f316e275f</recordtableid>
+    </None>
+    <None Include="Keywords\Validation\CheckSearchFailedResult.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>cc27843e-38f4-4f98-b03a-0e5394415d88</id>
+      <recordtableid>d37d296c-6636-416e-acd3-cb692d9a7090</recordtableid>
+    </None>
+    <None Include="Keywords\Validation\CheckSNPPage.rxrec">
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <id>a1799dea-d8ee-427c-8826-ba13a746d2d7</id>
+      <recordtableid>118824e8-0065-4af7-a547-4b6748b8bb68</recordtableid>
+    </None>
+    <None Include="Keywords\Validation\CheckSplashScreen.rxrec">
+      <id>af145f22-f257-4224-ad10-a05b00cc758a</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>af906c39-24ea-472c-be12-2ceabf51664a</recordtableid>
+    </None>
+    <None Include="Keywords\Validation\CheckTabsShowUp.rxrec">
+      <id>b2953471-be50-47ed-afd0-937056d5a8c9</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>06a2e3da-cd02-4522-97d8-f539e7c7d0e9</recordtableid>
+    </None>
+    <None Include="Keywords\Validation\CheckTitleDHSAndNoMaximineButton.rxrec">
+      <id>3eccfc3e-7b93-4bf3-9247-677ff0ccbf1e</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>13a491ed-eb30-4461-9d57-6c5f01b9db0d</recordtableid>
+    </None>
+    <None Include="Keywords\Validation\CheckTooltipServiceTagAndServiceCode.rxrec">
+      <id>58959e04-b9fc-4d96-b449-adda8aa7f72b</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>f40b3b34-cd84-4ac9-9c50-9c968cfab247</recordtableid>
+    </None>
+    <None Include="Keywords\Validation\CheckWindowsTroubleShooter.rxrec">
+      <id>79e92a51-275e-4363-83dd-673c00602627</id>
+      <BoundTo>17b89ec9-9eb9-468e-96d3-c6c7ad7ed212</BoundTo>
+      <recordtableid>83ed9cfc-86a0-439e-95e4-47fdc367ac9f</recordtableid>
+    </None>
+    <None Include="obj\x86\Debug\DHSAutomation.csproj.FileListAbsolute.txt">
+      <id>0499e6f5-4c54-4f7c-b38f-76d00971a7fb</id>
+    </None>
+    <None Include="obj\x86\Debug\DHSAutomation.csprojResolveAssemblyReference.cache">
+      <id>2d7d365a-9dd3-4944-a69d-635c43543b88</id>
+    </None>
+    <None Include="obj\x86\Debug\DHSAutomation.exe">
+      <id>272d68c9-6813-4e66-9125-0d89ba64adac</id>
+    </None>
+    <None Include="obj\x86\Debug\DHSAutomation.pdb">
+      <id>999bc1ed-eddf-4d70-9322-1232be05877d</id>
+    </None>
+    <None Include="obj\x86\Release\DHSAutomation.csproj.FileListAbsolute.txt">
+      <id>66422ed2-317f-4cef-aef8-ea972fd05b43</id>
+    </None>
+    <None Include="obj\x86\Release\DHSAutomation.csprojResolveAssemblyReference.cache">
+      <id>df867a8d-d769-4b50-b777-3a177321787c</id>
+    </None>
+    <None Include="obj\x86\Release\DHSAutomation.exe">
+      <id>e29ad2da-a756-4fd6-b34c-7ee12e92fd00</id>
+    </None>
+    <None Include="RepositoryImages\DHSAutomationRepository424dee14.rximgres">
+      <id>028cba1b-02d9-4bcc-89e5-303fa2d2604d</id>
+    </None>
+    <None Include="Resources\DHSSrv.exe.config">
+      <id>1ee97210-617f-483b-a61d-6a85ac97baa5</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\DHSTranslate.xml">
+      <id>25a16329-7c78-4ed0-974e-b5e2853b73b1</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\itextsharp.dll">
+      <id>e069cc16-7073-4f5d-a1b5-c16c92a0d5da</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\iTextSharp.xml">
+      <id>f4f3662e-7342-490a-8db2-ed87c8cbc055</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DHSAutomation.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>50e212d6-80e8-41de-bade-f8e05436e6d2</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common">
+      <id>08ebfca8-2bd0-4b3f-bb14-803f174dcd60</id>
+    </Folder>
+    <Folder Include="Document">
+      <id>c57bb2ea-fd40-411b-ae48-fc2d0a7df259</id>
+    </Folder>
+    <Folder Include="Keywords">
+      <id>1fea56b5-d3d6-4f9c-8286-6647f3918fe9</id>
+    </Folder>
+    <Folder Include="Keywords\ContentSelfupdate">
+      <id>6e18dd7d-e7fb-461e-b003-31721632a440</id>
+    </Folder>
+    <Folder Include="Keywords\General">
+      <id>c22e010f-5d43-457d-983c-e64ae1f932a6</id>
+    </Folder>
+    <Folder Include="Keywords\DellSystemInfo">
+      <id>b9ae3122-07d3-4996-bb44-985249552650</id>
+    </Folder>
+    <Folder Include="Keywords\Network">
+      <id>cdb79a11-40da-465f-9f0a-98745e406112</id>
+    </Folder>
+    <Folder Include="Keywords\LaunchOtherSW">
+      <id>1d0411a4-3dcd-4a3a-b7d7-d5471d64df61</id>
+    </Folder>
+    <Folder Include="Keywords\QuickStartGuide">
+      <id>b6c7ef5a-ebf0-4dc8-80b4-082f2c90a707</id>
+    </Folder>
+    <Folder Include="Keywords\SplashScreen">
+      <id>44444381-0317-4fb5-adc2-240457ddf335</id>
+    </Folder>
+    <Folder Include="Keywords\TelemetryEventsCheckFromDAWS">
+      <id>ddb50047-44a9-4f2c-a557-36f6fdd2bae3</id>
+    </Folder>
+    <Folder Include="Keywords\Validation">
+      <id>034cff95-e3a0-4145-9415-01e9ca6a20e8</id>
+    </Folder>
+    <Folder Include="obj">
+      <id>1fd7e583-399f-412b-bcc2-84e3d7bee549</id>
+    </Folder>
+    <Folder Include="Objects">
+      <id>8180e028-237f-4f37-9017-b4b768408931</id>
+    </Folder>
+    <Folder Include="obj\x86">
+      <id>cef69a13-74be-4e27-8d74-25ca909d5d31</id>
+    </Folder>
+    <Folder Include="obj\x86\Debug">
+      <id>0eca3227-1fac-4946-97bd-da2e1a3d2a56</id>
+    </Folder>
+    <Folder Include="obj\x86\Release">
+      <id>9ac06be9-f1ad-4a77-b4ea-72cac1eecd06</id>
+    </Folder>
+    <Folder Include="RepositoryImages">
+      <id>64b9567b-857e-4dab-bfc6-ba6f0d4e662a</id>
+    </Folder>
+    <Folder Include="Resources">
+      <id>09059877-d9a9-47e5-a8fe-e16a27916e62</id>
+    </Folder>
+    <Folder Include="Resources\Installer">
+      <id>fa3f3c24-5870-4c33-87a4-26ed64e17010</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" />
+</Project>

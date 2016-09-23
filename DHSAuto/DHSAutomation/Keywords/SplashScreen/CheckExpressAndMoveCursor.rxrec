@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.0"
+id="59f6067d-67ed-44e4-9b0d-072dc05c7e81"
+embeddedrepository="false"
+mode="Global">
+	<name>
+		CheckExpressAndMoveCursor
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CheckExpressAndMoveCursor"
+	namespace="DHSAutomation.Keywords.SplashScreen"/>
+	<variables>
+		<var
+		name="isConfirmManualSteps"
+		id="9b9672a7-2242-4cda-bc00-27c1c999a3ea">
+			True
+		</var>
+		<var
+		name="varPlatformName"
+		id="0b4e480b-21b9-4f6a-a9e0-df03081d540c">
+			Inspiron 3558
+		</var>
+		<var
+		name="varServiceTag"
+		id="fccc3e00-9937-457f-b440-db3b4c5b42ca">
+		</var>
+		<var
+		name="varServiceCode"
+		id="e7f898a5-54ab-43e9-9f18-ef63320dd3c3">
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="CheckServiceCodeInfo"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="2b9a2162-d52b-4597-be22-d0ee0087ccad"/>
+		</userrecorditem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="Mouse_Move_ServiceCodeTooltip"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="47ab33cd-c35d-44aa-a4a0-546f5857ffb2"/>
+		</userrecorditem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="ValidateExpressServiceCodeTooltip"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="414a1feb-b2bb-47fd-a33c-b4dad0fc72d7"/>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	name="DHSAutomationRepository"
+	id="b422637d-d4de-40e5-bf0f-b69169035549"
+	rxversion="6.0"
+	relativepath="..\..\DHSAutomationRepository.rxrep">
+		<codegen
+		classname="DHSAutomationRepository"
+		namespace="DHSAutomation"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="424dee14-8825-40c4-9a5b-69564e1ca82b"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CheckExpressAndMoveCursor.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

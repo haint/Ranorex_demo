@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.0"
+id="06a2e3da-cd02-4522-97d8-f539e7c7d0e9"
+embeddedrepository="false"
+mode="Global">
+	<name>
+		CheckTabsShowUp
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CheckTabsShowUp"
+	namespace="DHSAutomation.Keywords.Validation"/>
+	<variables>
+		<var
+		name="numTabs"
+		id="951a68bd-5534-496a-b498-fea5f5f23548">
+			3
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		methodname="CheckAllTabs"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="d95c083c-3ff0-4b42-b650-8af6931464b3">
+				<argument
+				variable="numTabs"
+				argname="totalTab"
+				id="cefc7963-91c0-4846-b829-4ac452de9a23">
+					<argvaluetype>
+						<![CDATA[System.Int32, mscorlib, Culture=neutral, PublicKeyToken=b77a5c561934e089]]>
+					</argvaluetype>
+					<argvalue>
+						<![CDATA[0]]>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	name="DHSAutomationRepository"
+	id="b422637d-d4de-40e5-bf0f-b69169035549"
+	rxversion="6.0"
+	relativepath="..\..\DHSAutomationRepository.rxrep">
+		<codegen
+		classname="DHSAutomationRepository"
+		namespace="DHSAutomation"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="424dee14-8825-40c4-9a5b-69564e1ca82b"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CheckTabsShowUp.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

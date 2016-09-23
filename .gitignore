@@ -5,3 +5,4 @@ Reports
 *.csproj.rxuser
 *.rxsln
 *.rxsln.pref
+.svn
