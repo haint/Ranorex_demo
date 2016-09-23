@@ -61,7 +61,9 @@ namespace DHSAutomation.Keywords.Validation
 			while(true){
 				if(repo.DHSArticleContentArea.RunAppInfo.Exists(1000)){
 					Report.Log(ReportLevel.Info, "Validation", "The troubleshooting wizard window is launched ", repo.WindowsNetworkDiagnostics.WindowsNetworkInfo);
-					Validate.Attribute(repo.WindowsNetworkDiagnostics.WindowsNetworkInfo, "Text", "Windows Network Diagnostics xxxx", "Message is wrongvvvvv", false);
+					Validate.Attribute(repo.WindowsNetworkDiagnostics.WindowsNetworkInfo, 
+					                   "Text", "Windows Network Diagnostics xxx", 
+					                   "Expected windows: Windows Network Diagnostics xxx, actual:" + repo.WindowsNetworkDiagnostics.WindowsNetwork.GetAttributeValue<String>("Text"), false);
 					break;
 				}else{
 					Delay.Seconds(3);
